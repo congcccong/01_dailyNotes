@@ -8,6 +8,7 @@ const readline = require('readline').createInterface({
   output: process.stdout,
 });
 
+// 不符合要求时，回调函数返回true，就会再次调用这个方法。
 function questionAgain(present, fn) {
   readline.question(present, (str) => {
     if (fn(str)) {
@@ -16,6 +17,7 @@ function questionAgain(present, fn) {
     }
   });
 }
+
 questionAgain(`请输入555\r\n`, (str) => {
   if (str != '555') {
     return true;
