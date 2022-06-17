@@ -1,0 +1,68 @@
+//网址   https://www.bilibili.com/video/BV1NJ411W7wh?spm_id_from=333.999.0.0&vd_source=35a8c8ec12477f63ea3e162bde6a19ed
+
+//视频列表的请求     https://api.bilibili.com/x/player/pagelist?bvid=BV1NJ411W7wh&jsonp=jsonp
+
+// https://www.bilibili.com/video/BV1tJ411Y7fB?spm_id_from=333.999.0.0&vd_source=35a8c8ec12477f63ea3e162bde6a19ed
+
+// https://api.bilibili.com/x/player/pagelist?bvid=BV1tJ411Y7fB&jsonp=jsonp
+
+/*
+返回回来的对象
+*/
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": [
+    {
+      "cid": 137818616,
+      "page": 1,
+      "from": "vupload",
+      "part": "1 课程介绍与代码获取方式",
+      "duration": 123,
+      "vid": "",
+      "weblink": "",
+      "dimension": { "width": 1920, "height": 1080, "rotate": 0 }
+    },
+    {
+      "cid": 137818652,
+      "page": 2,
+      "from": "vupload",
+      "part": "2 Javascript的过去与将来",
+      "duration": 623,
+      "vid": "",
+      "weblink": "",
+      "dimension": { "width": 1920, "height": 1080, "rotate": 0 }
+    },
+    {
+      "cid": 137818886,
+      "page": 3,
+      "from": "vupload",
+      "part": "3 ES开发工具选择",
+      "duration": 289,
+      "vid": "",
+      "weblink": "",
+      "dimension": { "width": 1920, "height": 1080, "rotate": 0 }
+    },
+    {
+      "cid": 137819006,
+      "page": 4,
+      "from": "vupload",
+      "part": "4 让程序跑起来与避免延迟",
+      "duration": 293,
+      "vid": "",
+      "weblink": "",
+      "dimension": { "width": 1920, "height": 1080, "rotate": 0 }
+    },
+    {
+      "cid": 144711481,
+      "page": 395,
+      "from": "vupload",
+      "part": "18 PROMISE的RACE静态方法实现",
+      "duration": 239,
+      "vid": "",
+      "weblink": "",
+      "dimension": { "width": 1920, "height": 1080, "rotate": 0 }
+    }
+  ]
+}
