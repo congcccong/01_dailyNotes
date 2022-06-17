@@ -1,0 +1,5537 @@
+{
+    "code": 0,
+    "message": "0",
+    "ttl": 1,
+    "data": [
+        {
+            "cid": 137818616,
+            "page": 1,
+            "from": "vupload",
+            "part": "1 课程介绍与代码获取方式",
+            "duration": 123,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137818652,
+            "page": 2,
+            "from": "vupload",
+            "part": "2 Javascript的过去与将来",
+            "duration": 623,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137818886,
+            "page": 3,
+            "from": "vupload",
+            "part": "3 ES开发工具选择",
+            "duration": 289,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819006,
+            "page": 4,
+            "from": "vupload",
+            "part": "4 让程序跑起来与避免延迟",
+            "duration": 293,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819146,
+            "page": 5,
+            "from": "vupload",
+            "part": "5 前端访问流程基本分析",
+            "duration": 257,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819249,
+            "page": 6,
+            "from": "vupload",
+            "part": "6 注释与执行符",
+            "duration": 265,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819366,
+            "page": 7,
+            "from": "vupload",
+            "part": "7 变量声明基础知识",
+            "duration": 348,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819497,
+            "page": 8,
+            "from": "vupload",
+            "part": "8 体验解析过程与变量提升",
+            "duration": 356,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819635,
+            "page": 9,
+            "from": "vupload",
+            "part": "9 let&const暂时性死区TDC",
+            "duration": 307,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819747,
+            "page": 10,
+            "from": "vupload",
+            "part": "10 var-let-const的共同点",
+            "duration": 344,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819880,
+            "page": 11,
+            "from": "vupload",
+            "part": "11 可怕的全局污染",
+            "duration": 248,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137819975,
+            "page": 12,
+            "from": "vupload",
+            "part": "12 块作用域这个先进的特性",
+            "duration": 517,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137820176,
+            "page": 13,
+            "from": "vupload",
+            "part": "13 const常量声明一探究竟",
+            "duration": 404,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137820353,
+            "page": 14,
+            "from": "vupload",
+            "part": "14 window全局对象污染与重复声明",
+            "duration": 365,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137820509,
+            "page": 15,
+            "from": "vupload",
+            "part": "15 Object.freeze冻结变量",
+            "duration": 227,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137820607,
+            "page": 16,
+            "from": "vupload",
+            "part": "16 标量与引用类型的传值与传址特性",
+            "duration": 360,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137820777,
+            "page": 17,
+            "from": "vupload",
+            "part": "17 null与undefined详解",
+            "duration": 451,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137820979,
+            "page": 18,
+            "from": "vupload",
+            "part": "18 use strict严格模式高质量代码守卫",
+            "duration": 430,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137821164,
+            "page": 19,
+            "from": "vupload",
+            "part": "1 赋值运算符与算术运算符",
+            "duration": 146,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137821226,
+            "page": 20,
+            "from": "vupload",
+            "part": "2 一元运算符的前置与后置操作",
+            "duration": 127,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137821286,
+            "page": 21,
+            "from": "vupload",
+            "part": "3 比较运算符注意事项",
+            "duration": 421,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137821465,
+            "page": 22,
+            "from": "vupload",
+            "part": "4 逻辑运算符实例详解",
+            "duration": 523,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137821724,
+            "page": 23,
+            "from": "vupload",
+            "part": "5 短路运算的妙用",
+            "duration": 339,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137821855,
+            "page": 24,
+            "from": "vupload",
+            "part": "6 网站协议接受验证",
+            "duration": 299,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137821977,
+            "page": 25,
+            "from": "vupload",
+            "part": "7 使用ifelse判断密码强度",
+            "duration": 283,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137822117,
+            "page": 26,
+            "from": "vupload",
+            "part": "8 三元表达式真的好可爱",
+            "duration": 241,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137822229,
+            "page": 27,
+            "from": "vupload",
+            "part": "9 switch使用注意事项",
+            "duration": 450,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137822443,
+            "page": 28,
+            "from": "vupload",
+            "part": "10 while循环控制",
+            "duration": 320,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137822586,
+            "page": 29,
+            "from": "vupload",
+            "part": "11 dowhile循环实例操作",
+            "duration": 188,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137822660,
+            "page": 30,
+            "from": "vupload",
+            "part": "12 使用for循环打印杨辉三角",
+            "duration": 346,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137822807,
+            "page": 31,
+            "from": "vupload",
+            "part": "13 break-continue与label标签的使用",
+            "duration": 366,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137822978,
+            "page": 32,
+            "from": "vupload",
+            "part": "14 for-in与for-of使用方法操作",
+            "duration": 511,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137823208,
+            "page": 33,
+            "from": "vupload",
+            "part": "1 章节介绍与类型判断",
+            "duration": 420,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137823390,
+            "page": 34,
+            "from": "vupload",
+            "part": "2 字符串转义与模板字面量使用",
+            "duration": 440,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137823562,
+            "page": 35,
+            "from": "vupload",
+            "part": "3 模板字面量嵌套使用技巧",
+            "duration": 320,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137823702,
+            "page": 36,
+            "from": "vupload",
+            "part": "4 神奇的标签模板实例操作",
+            "duration": 515,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137823936,
+            "page": 37,
+            "from": "vupload",
+            "part": "5 字符串基本函数使用",
+            "duration": 478,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137824138,
+            "page": 38,
+            "from": "vupload",
+            "part": "6 字符串截取操作",
+            "duration": 207,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137824221,
+            "page": 39,
+            "from": "vupload",
+            "part": "7 检索字符串使用技巧",
+            "duration": 321,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137824398,
+            "page": 40,
+            "from": "vupload",
+            "part": "8 字符串替换标题关键词",
+            "duration": 199,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137824489,
+            "page": 41,
+            "from": "vupload",
+            "part": "9 电话号码模糊处理",
+            "duration": 133,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137824546,
+            "page": 42,
+            "from": "vupload",
+            "part": "10 类型转换使用技巧",
+            "duration": 467,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137824748,
+            "page": 43,
+            "from": "vupload",
+            "part": "11 Boolean隐式转换原理",
+            "duration": 568,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137824980,
+            "page": 44,
+            "from": "vupload",
+            "part": "12 显示转换Booean类型",
+            "duration": 216,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137825079,
+            "page": 45,
+            "from": "vupload",
+            "part": "13 boolean实例操作",
+            "duration": 160,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137825145,
+            "page": 46,
+            "from": "vupload",
+            "part": "14 Number声明方式与基本函数",
+            "duration": 183,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137825232,
+            "page": 47,
+            "from": "vupload",
+            "part": "15 数值类型转换技巧与NaN类型",
+            "duration": 407,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137825461,
+            "page": 48,
+            "from": "vupload",
+            "part": "16 Math数学计算",
+            "duration": 225,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137825567,
+            "page": 49,
+            "from": "vupload",
+            "part": "17 Math.random随机点名操作",
+            "duration": 699,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137825840,
+            "page": 50,
+            "from": "vupload",
+            "part": "18 日期时间戳的使用与计算脚本执行时间",
+            "duration": 374,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137826002,
+            "page": 51,
+            "from": "vupload",
+            "part": "19 ISO与TIMESTAMP格式互换",
+            "duration": 116,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137826048,
+            "page": 52,
+            "from": "vupload",
+            "part": "20 封装日期格式化函数",
+            "duration": 286,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 137826154,
+            "page": 53,
+            "from": "vupload",
+            "part": "21 优秀的日期处理库momentjs",
+            "duration": 151,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138130807,
+            "page": 54,
+            "from": "vupload",
+            "part": "1 课程介绍与数组引用类型分析",
+            "duration": 403,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138131130,
+            "page": 55,
+            "from": "vupload",
+            "part": "2 多维数组操作",
+            "duration": 190,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138131244,
+            "page": 56,
+            "from": "vupload",
+            "part": "3 Array.of与数组创建细节",
+            "duration": 214,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138131398,
+            "page": 57,
+            "from": "vupload",
+            "part": "4 类型检测与转换",
+            "duration": 404,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138131541,
+            "page": 58,
+            "from": "vupload",
+            "part": "5 展开语法真的好用啊",
+            "duration": 232,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138131623,
+            "page": 59,
+            "from": "vupload",
+            "part": "6 点语法操作DOM节点元素",
+            "duration": 221,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138131705,
+            "page": 60,
+            "from": "vupload",
+            "part": "7 使用解构赋值提高效率",
+            "duration": 591,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138131899,
+            "page": 61,
+            "from": "vupload",
+            "part": "8 添加元素的多种操作技巧",
+            "duration": 331,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132004,
+            "page": 62,
+            "from": "vupload",
+            "part": "9 数据出栈与入栈及填充操作",
+            "duration": 263,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132088,
+            "page": 63,
+            "from": "vupload",
+            "part": "10 splice与slice实现数组的增删改查",
+            "duration": 340,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132194,
+            "page": 64,
+            "from": "vupload",
+            "part": "11 数组移动函数实例",
+            "duration": 251,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132266,
+            "page": 65,
+            "from": "vupload",
+            "part": "12 清空数组的多种处理方式",
+            "duration": 198,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132347,
+            "page": 66,
+            "from": "vupload",
+            "part": "13 数组的拆分与合并操作",
+            "duration": 265,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132434,
+            "page": 67,
+            "from": "vupload",
+            "part": "14 查找元素基本使用",
+            "duration": 268,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132525,
+            "page": 68,
+            "from": "vupload",
+            "part": "15 includes方法原理实现",
+            "duration": 124,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132560,
+            "page": 69,
+            "from": "vupload",
+            "part": "16 高效的find与findIndex新增方法",
+            "duration": 305,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132663,
+            "page": 70,
+            "from": "vupload",
+            "part": "17 自定义find原型方法实现",
+            "duration": 189,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132721,
+            "page": 71,
+            "from": "vupload",
+            "part": "18 数组排序使用技巧",
+            "duration": 269,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132809,
+            "page": 72,
+            "from": "vupload",
+            "part": "19 sort排序算法原理实现",
+            "duration": 230,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132894,
+            "page": 73,
+            "from": "vupload",
+            "part": "20 循环操作中引用类型使用技巧",
+            "duration": 277,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138132974,
+            "page": 74,
+            "from": "vupload",
+            "part": "21 forEach循环方法使用",
+            "duration": 249,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138133062,
+            "page": 75,
+            "from": "vupload",
+            "part": "22 iterator迭代器方法玩转数组",
+            "duration": 426,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138133284,
+            "page": 76,
+            "from": "vupload",
+            "part": "23 every与some这么用的",
+            "duration": 506,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138133694,
+            "page": 77,
+            "from": "vupload",
+            "part": "24 filter过滤元素使用",
+            "duration": 150,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138133821,
+            "page": 78,
+            "from": "vupload",
+            "part": "25 自定义过滤函数理解原理",
+            "duration": 142,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138134027,
+            "page": 79,
+            "from": "vupload",
+            "part": "26 map映射数组与引用类型处理技巧",
+            "duration": 321,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138134357,
+            "page": 80,
+            "from": "vupload",
+            "part": "27 超好用的reduce方法详解",
+            "duration": 348,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138134646,
+            "page": 81,
+            "from": "vupload",
+            "part": "28 购物车汇总与获取最贵商品",
+            "duration": 170,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138134769,
+            "page": 82,
+            "from": "vupload",
+            "part": "29 处理购物车中的重复商品",
+            "duration": 416,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135009,
+            "page": 83,
+            "from": "vupload",
+            "part": "30 炫酷的文字LOGO效果元素构建",
+            "duration": 204,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135156,
+            "page": 84,
+            "from": "vupload",
+            "part": "31 为LOGO添加关键帧动画",
+            "duration": 239,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135361,
+            "page": 85,
+            "from": "vupload",
+            "part": "32 监听animationend事件移动动画类",
+            "duration": 128,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135403,
+            "page": 86,
+            "from": "vupload",
+            "part": "1 Symbol使用场景介绍",
+            "duration": 224,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135480,
+            "page": 87,
+            "from": "vupload",
+            "part": "2 声明定义Symbol的几种方式",
+            "duration": 306,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135559,
+            "page": 88,
+            "from": "vupload",
+            "part": "3 使用Symbol解决字符串耦合问题",
+            "duration": 214,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135632,
+            "page": 89,
+            "from": "vupload",
+            "part": "4 Symbol在缓存容器中的使用",
+            "duration": 345,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138135753,
+            "page": 90,
+            "from": "vupload",
+            "part": "5 扩展特性与对象属性保护",
+            "duration": 306,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138138967,
+            "page": 91,
+            "from": "vupload",
+            "part": "1 Set类型与Array与Object对比分析",
+            "duration": 286,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139059,
+            "page": 92,
+            "from": "vupload",
+            "part": "2 Set元素检测与管理",
+            "duration": 190,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139102,
+            "page": 93,
+            "from": "vupload",
+            "part": "3 类型之间互相帮助才是好兄弟",
+            "duration": 264,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139174,
+            "page": 94,
+            "from": "vupload",
+            "part": "4 遍历Set类型的方式",
+            "duration": 170,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139230,
+            "page": 95,
+            "from": "vupload",
+            "part": "5 使用Set处理网站关键词",
+            "duration": 312,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139333,
+            "page": 96,
+            "from": "vupload",
+            "part": "6 并集-交集-差集算法实现",
+            "duration": 192,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139401,
+            "page": 97,
+            "from": "vupload",
+            "part": "7 WeakSet语法介绍",
+            "duration": 189,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139448,
+            "page": 98,
+            "from": "vupload",
+            "part": "8 引用类型的垃圾回收原理",
+            "duration": 256,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139517,
+            "page": 99,
+            "from": "vupload",
+            "part": "9 WeakSet弱引用特性",
+            "duration": 367,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139610,
+            "page": 100,
+            "from": "vupload",
+            "part": "10 TODO任务列表中使用WeakSet",
+            "duration": 337,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139699,
+            "page": 101,
+            "from": "vupload",
+            "part": "1 Map类型特点与创建方法",
+            "duration": 352,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139794,
+            "page": 102,
+            "from": "vupload",
+            "part": "2 Map类型增删改查操作",
+            "duration": 202,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139852,
+            "page": 103,
+            "from": "vupload",
+            "part": "3 遍历Map类型数据",
+            "duration": 136,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139886,
+            "page": 104,
+            "from": "vupload",
+            "part": "4 Map类型转换操作",
+            "duration": 231,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139936,
+            "page": 105,
+            "from": "vupload",
+            "part": "5 Map类型管理DOM节点",
+            "duration": 201,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138139981,
+            "page": 106,
+            "from": "vupload",
+            "part": "6 使用Map类型控制网站表单提交",
+            "duration": 339,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140067,
+            "page": 107,
+            "from": "vupload",
+            "part": "7 WeakMap的语法使用",
+            "duration": 228,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140128,
+            "page": 108,
+            "from": "vupload",
+            "part": "8 WeakMap弱引用类型体验",
+            "duration": 344,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140211,
+            "page": 109,
+            "from": "vupload",
+            "part": "9 使用WeakSet开发选课组件",
+            "duration": 495,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140345,
+            "page": 110,
+            "from": "vupload",
+            "part": "10 WeakMap选课案例的视图渲染",
+            "duration": 385,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140535,
+            "page": 111,
+            "from": "vupload",
+            "part": "1 函数声明的多种方式",
+            "duration": 401,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140460,
+            "page": 112,
+            "from": "vupload",
+            "part": "2 全局函数定义特点",
+            "duration": 213,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140666,
+            "page": 113,
+            "from": "vupload",
+            "part": "3 匿名函数与函数提升",
+            "duration": 301,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140772,
+            "page": 114,
+            "from": "vupload",
+            "part": "4 立即执行函数与块作用域解决冲突",
+            "duration": 396,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140913,
+            "page": 115,
+            "from": "vupload",
+            "part": "5 形参与实参",
+            "duration": 146,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138140964,
+            "page": 116,
+            "from": "vupload",
+            "part": "6 默认参数的使用技巧",
+            "duration": 430,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141068,
+            "page": 117,
+            "from": "vupload",
+            "part": "7 函数参数与arguments",
+            "duration": 408,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141178,
+            "page": 118,
+            "from": "vupload",
+            "part": "8 箭头函数使用语法",
+            "duration": 384,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141308,
+            "page": 119,
+            "from": "vupload",
+            "part": "9 使用函数完成递归算法",
+            "duration": 377,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141426,
+            "page": 120,
+            "from": "vupload",
+            "part": "10 递归求合与点语法注意事项",
+            "duration": 280,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141492,
+            "page": 121,
+            "from": "vupload",
+            "part": "11 递归实现倒三角",
+            "duration": 154,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141534,
+            "page": 122,
+            "from": "vupload",
+            "part": "12 递归附加参数使用技巧",
+            "duration": 281,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141622,
+            "page": 123,
+            "from": "vupload",
+            "part": "13 什么是回调函数",
+            "duration": 157,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141668,
+            "page": 124,
+            "from": "vupload",
+            "part": "14 展开语法(点语法)正确使用方式",
+            "duration": 372,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141794,
+            "page": 125,
+            "from": "vupload",
+            "part": "15 函数与方法中this的不同",
+            "duration": 559,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138141958,
+            "page": 126,
+            "from": "vupload",
+            "part": "16 通过常量改变this指针",
+            "duration": 323,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142056,
+            "page": 127,
+            "from": "vupload",
+            "part": "17 箭头函数带来的this变化实例",
+            "duration": 824,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142299,
+            "page": 128,
+            "from": "vupload",
+            "part": "18 this的构造原理实现",
+            "duration": 244,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142364,
+            "page": 129,
+            "from": "vupload",
+            "part": "19 call与apply",
+            "duration": 408,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142485,
+            "page": 130,
+            "from": "vupload",
+            "part": "20 构造函数方法继承",
+            "duration": 525,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142613,
+            "page": 131,
+            "from": "vupload",
+            "part": "21 优雅的开发面板组件",
+            "duration": 293,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142702,
+            "page": 132,
+            "from": "vupload",
+            "part": "22 bind原来是这么用的",
+            "duration": 462,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142847,
+            "page": 133,
+            "from": "vupload",
+            "part": "23 漂亮的随机色效果",
+            "duration": 238,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138142917,
+            "page": 134,
+            "from": "vupload",
+            "part": "1 什么是环境与作用域",
+            "duration": 600,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143076,
+            "page": 135,
+            "from": "vupload",
+            "part": "2 函数的环境与作用域原理",
+            "duration": 391,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143182,
+            "page": 136,
+            "from": "vupload",
+            "part": "3 延伸函数环境生命周期",
+            "duration": 666,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143387,
+            "page": 137,
+            "from": "vupload",
+            "part": "4 构造函数中的作用域的使用形态",
+            "duration": 263,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143481,
+            "page": 138,
+            "from": "vupload",
+            "part": "5 什么是块级作用域",
+            "duration": 249,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143561,
+            "page": 139,
+            "from": "vupload",
+            "part": "6 let-const-var在for循环中执行原理",
+            "duration": 350,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143671,
+            "page": 140,
+            "from": "vupload",
+            "part": "7 模拟出var的伪块作用域",
+            "duration": 159,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143707,
+            "page": 141,
+            "from": "vupload",
+            "part": "8 多级作用域嵌套详解",
+            "duration": 370,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143816,
+            "page": 142,
+            "from": "vupload",
+            "part": "9 什么是闭包及与其他语言对比实例",
+            "duration": 114,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143849,
+            "page": 143,
+            "from": "vupload",
+            "part": "10 使用闭包获取区间商品",
+            "duration": 309,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138143943,
+            "page": 144,
+            "from": "vupload",
+            "part": "11 移动动画的闭包使用",
+            "duration": 258,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144023,
+            "page": 145,
+            "from": "vupload",
+            "part": "12 动画为什么会抖动呢？",
+            "duration": 207,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144078,
+            "page": 146,
+            "from": "vupload",
+            "part": "13 动画加速的原因",
+            "duration": 291,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144172,
+            "page": 147,
+            "from": "vupload",
+            "part": "14 利用闭包根据字段排序商品",
+            "duration": 377,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144292,
+            "page": 148,
+            "from": "vupload",
+            "part": "15 闭包的内存泄漏解决方法",
+            "duration": 188,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144354,
+            "page": 149,
+            "from": "vupload",
+            "part": "16 this在闭包中的历史遗留问题",
+            "duration": 221,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144504,
+            "page": 150,
+            "from": "vupload",
+            "part": "1 函数编程与面向对象的实例对比",
+            "duration": 449,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144636,
+            "page": 151,
+            "from": "vupload",
+            "part": "2 属性的基本操作方法",
+            "duration": 222,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144700,
+            "page": 152,
+            "from": "vupload",
+            "part": "3 对象的引用传址",
+            "duration": 233,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144770,
+            "page": 153,
+            "from": "vupload",
+            "part": "4 使用展示语法完成参数合并",
+            "duration": 241,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144846,
+            "page": 154,
+            "from": "vupload",
+            "part": "5 解构赋值新增特性",
+            "duration": 346,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144927,
+            "page": 155,
+            "from": "vupload",
+            "part": "6 严格模式中解构的差异",
+            "duration": 129,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138144967,
+            "page": 156,
+            "from": "vupload",
+            "part": "7 解构操作的简写形式与变量解构",
+            "duration": 238,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145028,
+            "page": 157,
+            "from": "vupload",
+            "part": "8 多层对象的解构操作",
+            "duration": 129,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145076,
+            "page": 158,
+            "from": "vupload",
+            "part": "9 解构默认值实现配置项合并",
+            "duration": 323,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145178,
+            "page": 159,
+            "from": "vupload",
+            "part": "10 函数参数的解构特性使用技巧",
+            "duration": 152,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145229,
+            "page": 160,
+            "from": "vupload",
+            "part": "11 对象属性的添加删除操作",
+            "duration": 136,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145270,
+            "page": 161,
+            "from": "vupload",
+            "part": "12 对象与原型链属性检测实例",
+            "duration": 331,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145365,
+            "page": 162,
+            "from": "vupload",
+            "part": "13 计算属性与assign使用",
+            "duration": 358,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145477,
+            "page": 163,
+            "from": "vupload",
+            "part": "14  遍历操作与DOM绘制",
+            "duration": 424,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145615,
+            "page": 164,
+            "from": "vupload",
+            "part": "15 对象的浅拷贝多种操作方法",
+            "duration": 299,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145706,
+            "page": 165,
+            "from": "vupload",
+            "part": "16 深拷贝多层次分析",
+            "duration": 632,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145886,
+            "page": 166,
+            "from": "vupload",
+            "part": "17 使用工厂函数创建对象",
+            "duration": 264,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138145975,
+            "page": 167,
+            "from": "vupload",
+            "part": "18 构造函数创建对象的方式",
+            "duration": 232,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146045,
+            "page": 168,
+            "from": "vupload",
+            "part": "19 原来数据也可以使用构造函数构建",
+            "duration": 417,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146170,
+            "page": 169,
+            "from": "vupload",
+            "part": "20 面向对象的封装与抽象",
+            "duration": 368,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146276,
+            "page": 170,
+            "from": "vupload",
+            "part": "21 什么是对象的属性特征",
+            "duration": 269,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146358,
+            "page": 171,
+            "from": "vupload",
+            "part": "22 灵活的控制属性的特征",
+            "duration": 423,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146503,
+            "page": 172,
+            "from": "vupload",
+            "part": "23 不允许向对象中添加属性API",
+            "duration": 88,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146535,
+            "page": 173,
+            "from": "vupload",
+            "part": "24 封闭对象的API操作",
+            "duration": 182,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146591,
+            "page": 174,
+            "from": "vupload",
+            "part": "25 冻结对象API特性",
+            "duration": 159,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146649,
+            "page": 175,
+            "from": "vupload",
+            "part": "26 使用访问器保护数据",
+            "duration": 375,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146764,
+            "page": 176,
+            "from": "vupload",
+            "part": "27 访问器伪造属性操作",
+            "duration": 154,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146806,
+            "page": 177,
+            "from": "vupload",
+            "part": "28 使用访问器批量设置属性",
+            "duration": 149,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146852,
+            "page": 178,
+            "from": "vupload",
+            "part": "29 TOKEN的读写处理",
+            "duration": 172,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138146917,
+            "page": 179,
+            "from": "vupload",
+            "part": "30 访问器的优先级",
+            "duration": 259,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147009,
+            "page": 180,
+            "from": "vupload",
+            "part": "31 构造函数与class语法糖中使用访问器",
+            "duration": 335,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147128,
+            "page": 181,
+            "from": "vupload",
+            "part": "32 什么是Proxy代理拦截",
+            "duration": 307,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147238,
+            "page": 182,
+            "from": "vupload",
+            "part": "33 使用代理Proxy控制函数",
+            "duration": 198,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147309,
+            "page": 183,
+            "from": "vupload",
+            "part": "34 数组使用代理拦截操作",
+            "duration": 234,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147382,
+            "page": 184,
+            "from": "vupload",
+            "part": "35 VUEJS数据绑定的容器更新",
+            "duration": 289,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147472,
+            "page": 185,
+            "from": "vupload",
+            "part": "36 双向数据绑定的页面渲染",
+            "duration": 186,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147541,
+            "page": 186,
+            "from": "vupload",
+            "part": "37 表单验证组件的代理工厂",
+            "duration": 323,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147650,
+            "page": 187,
+            "from": "vupload",
+            "part": "38 使用代理完成自定义验证组件",
+            "duration": 373,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147782,
+            "page": 188,
+            "from": "vupload",
+            "part": "39 JSON数据解决什么问题",
+            "duration": 470,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138147943,
+            "page": 189,
+            "from": "vupload",
+            "part": "40 JSON序列化与自定义toJSON",
+            "duration": 244,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148009,
+            "page": 190,
+            "from": "vupload",
+            "part": "41 JSON转为JS可操作类型",
+            "duration": 215,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148157,
+            "page": 191,
+            "from": "vupload",
+            "part": "1 学习原型的重要性与章节介绍",
+            "duration": 188,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148222,
+            "page": 192,
+            "from": "vupload",
+            "part": "2 原型的初步认识",
+            "duration": 216,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148281,
+            "page": 193,
+            "from": "vupload",
+            "part": "3 没有原型的对象也是存在的",
+            "duration": 166,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148327,
+            "page": 194,
+            "from": "vupload",
+            "part": "4 原型方法与对象方法优先级",
+            "duration": 160,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148375,
+            "page": 195,
+            "from": "vupload",
+            "part": "5 函数拥有多个长辈",
+            "duration": 412,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148499,
+            "page": 196,
+            "from": "vupload",
+            "part": "6 原型关系详解与属性继承实例",
+            "duration": 435,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148623,
+            "page": 197,
+            "from": "vupload",
+            "part": "7 系统构造函数的原型体现",
+            "duration": 256,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148712,
+            "page": 198,
+            "from": "vupload",
+            "part": "8 自定义对象的原型设置",
+            "duration": 253,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148783,
+            "page": 199,
+            "from": "vupload",
+            "part": "9 原型中的constructor引用",
+            "duration": 477,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138148941,
+            "page": 200,
+            "from": "vupload",
+            "part": "10 给我一个对象还你一个世界",
+            "duration": 219,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149019,
+            "page": 201,
+            "from": "vupload",
+            "part": "11 总结一下原型链",
+            "duration": 369,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149136,
+            "page": 202,
+            "from": "vupload",
+            "part": "12 原型链检测之instanceof",
+            "duration": 329,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149240,
+            "page": 203,
+            "from": "vupload",
+            "part": "13 Object.isPrototypeOf原型检测",
+            "duration": 271,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149321,
+            "page": 204,
+            "from": "vupload",
+            "part": "14 in与hasOwnProperty的属性检测差异",
+            "duration": 210,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149372,
+            "page": 205,
+            "from": "vupload",
+            "part": "15 使用call或apply借用原型链",
+            "duration": 313,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149483,
+            "page": 206,
+            "from": "vupload",
+            "part": "16 优化方法借用",
+            "duration": 175,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149541,
+            "page": 207,
+            "from": "vupload",
+            "part": "17 DOM节点借用Array原型方法",
+            "duration": 286,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149626,
+            "page": 208,
+            "from": "vupload",
+            "part": "18 合理的构造函数方法声明",
+            "duration": 206,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149688,
+            "page": 209,
+            "from": "vupload",
+            "part": "19 this和原型没有关系的",
+            "duration": 162,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149744,
+            "page": 210,
+            "from": "vupload",
+            "part": "20 不要滥用原型",
+            "duration": 221,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149809,
+            "page": 211,
+            "from": "vupload",
+            "part": "21 Object.create与__proto__",
+            "duration": 215,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149877,
+            "page": 212,
+            "from": "vupload",
+            "part": "22 使用setPrototypeOf替代__proto__",
+            "duration": 136,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138149914,
+            "page": 213,
+            "from": "vupload",
+            "part": "23 __proto__原来是属性访问器",
+            "duration": 334,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150019,
+            "page": 214,
+            "from": "vupload",
+            "part": "24 改变构造函数原型并不是继承",
+            "duration": 481,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150171,
+            "page": 215,
+            "from": "vupload",
+            "part": "25 继承是原型的继承",
+            "duration": 464,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150316,
+            "page": 216,
+            "from": "vupload",
+            "part": "26 继承对新增对象的影响",
+            "duration": 218,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150371,
+            "page": 217,
+            "from": "vupload",
+            "part": "27 继承对constructor属性的影响",
+            "duration": 435,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150492,
+            "page": 218,
+            "from": "vupload",
+            "part": "28 禁止constructor被遍历",
+            "duration": 220,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150558,
+            "page": 219,
+            "from": "vupload",
+            "part": "29 方法重写与父级属性访问",
+            "duration": 175,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150617,
+            "page": 220,
+            "from": "vupload",
+            "part": "30 面向对象的多态",
+            "duration": 201,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150690,
+            "page": 221,
+            "from": "vupload",
+            "part": "31 使用父类构造函数初始属性",
+            "duration": 384,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150795,
+            "page": 222,
+            "from": "vupload",
+            "part": "32 使用原型工厂封装继承",
+            "duration": 239,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150863,
+            "page": 223,
+            "from": "vupload",
+            "part": "33 对象工厂派生对象并实现继承",
+            "duration": 339,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138150977,
+            "page": 224,
+            "from": "vupload",
+            "part": "34 多继承造成的困扰",
+            "duration": 413,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151112,
+            "page": 225,
+            "from": "vupload",
+            "part": "35 使用mixin实现多继承",
+            "duration": 405,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151247,
+            "page": 226,
+            "from": "vupload",
+            "part": "36 mixin的内部继承与super关键字",
+            "duration": 345,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151379,
+            "page": 227,
+            "from": "vupload",
+            "part": "37 TAB选项卡显示效果基类开发",
+            "duration": 193,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151439,
+            "page": 228,
+            "from": "vupload",
+            "part": "38 好用的TAB业务管理类",
+            "duration": 523,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151610,
+            "page": 229,
+            "from": "vupload",
+            "part": "39 开放更多API实现灵活定制",
+            "duration": 390,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151711,
+            "page": 230,
+            "from": "vupload",
+            "part": "1 类的特点是什么？",
+            "duration": 178,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151772,
+            "page": 231,
+            "from": "vupload",
+            "part": "2 class声明类的语法",
+            "duration": 291,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151848,
+            "page": 232,
+            "from": "vupload",
+            "part": "3 类的内部工作机制就是原型操作",
+            "duration": 423,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138151989,
+            "page": 233,
+            "from": "vupload",
+            "part": "4 对象属性的声明",
+            "duration": 160,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152051,
+            "page": 234,
+            "from": "vupload",
+            "part": "5 class声明的方法为什么不能遍历",
+            "duration": 285,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152149,
+            "page": 235,
+            "from": "vupload",
+            "part": "6 严格模式下运行",
+            "duration": 174,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152202,
+            "page": 236,
+            "from": "vupload",
+            "part": "7 静态属性使用",
+            "duration": 311,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152298,
+            "page": 237,
+            "from": "vupload",
+            "part": "8 静态方法的实现原理",
+            "duration": 631,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152494,
+            "page": 238,
+            "from": "vupload",
+            "part": "9 静态属性练习之课程管理类",
+            "duration": 350,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152614,
+            "page": 239,
+            "from": "vupload",
+            "part": "10 在类中使用访问器",
+            "duration": 324,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152713,
+            "page": 240,
+            "from": "vupload",
+            "part": "11 使用命名规则保护属性",
+            "duration": 259,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152794,
+            "page": 241,
+            "from": "vupload",
+            "part": "12 使用Symbol定义protected属性",
+            "duration": 373,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138152918,
+            "page": 242,
+            "from": "vupload",
+            "part": "13 使用WeakMap保护属性",
+            "duration": 403,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153022,
+            "page": 243,
+            "from": "vupload",
+            "part": "14 pricate私有属性使用",
+            "duration": 317,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153117,
+            "page": 244,
+            "from": "vupload",
+            "part": "15 class属性继承原理",
+            "duration": 207,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153177,
+            "page": 245,
+            "from": "vupload",
+            "part": "16 类的方法继承原理",
+            "duration": 202,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153233,
+            "page": 246,
+            "from": "vupload",
+            "part": "17 super原理分析",
+            "duration": 467,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153367,
+            "page": 247,
+            "from": "vupload",
+            "part": "18 多重继承中super的魅力",
+            "duration": 213,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153419,
+            "page": 248,
+            "from": "vupload",
+            "part": "19 constructor中执行super",
+            "duration": 262,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153487,
+            "page": 249,
+            "from": "vupload",
+            "part": "20 使用super访问父类方法",
+            "duration": 223,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153561,
+            "page": 250,
+            "from": "vupload",
+            "part": "21 方法的重写",
+            "duration": 113,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153598,
+            "page": 251,
+            "from": "vupload",
+            "part": "22 静态继承原理",
+            "duration": 295,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153699,
+            "page": 252,
+            "from": "vupload",
+            "part": "23 使用instanceof检测对象实现",
+            "duration": 359,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153806,
+            "page": 253,
+            "from": "vupload",
+            "part": "24 isPrototypeOf检测继承关系",
+            "duration": 188,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153867,
+            "page": 254,
+            "from": "vupload",
+            "part": "25 内置类继承的原型实现",
+            "duration": 206,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138153936,
+            "page": 255,
+            "from": "vupload",
+            "part": "26 使用继承增强内置类",
+            "duration": 217,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154015,
+            "page": 256,
+            "from": "vupload",
+            "part": "27 mixin混合模式使用技巧",
+            "duration": 300,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154127,
+            "page": 257,
+            "from": "vupload",
+            "part": "28 灵活的动画处理类",
+            "duration": 448,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154262,
+            "page": 258,
+            "from": "vupload",
+            "part": "29 容器管理类Slide定义",
+            "duration": 198,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154328,
+            "page": 259,
+            "from": "vupload",
+            "part": "30 批量执行动画",
+            "duration": 302,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154439,
+            "page": 260,
+            "from": "vupload",
+            "part": "31 动画队列的控制",
+            "duration": 257,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154508,
+            "page": 261,
+            "from": "vupload",
+            "part": "1 为什么使用模块化开发",
+            "duration": 288,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154593,
+            "page": 262,
+            "from": "vupload",
+            "part": "2 开发一个模块管理引擎",
+            "duration": 700,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154810,
+            "page": 263,
+            "from": "vupload",
+            "part": "3 模块的基本使用",
+            "duration": 347,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138154919,
+            "page": 264,
+            "from": "vupload",
+            "part": "4 模块延迟解析与严格模式",
+            "duration": 266,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155012,
+            "page": 265,
+            "from": "vupload",
+            "part": "5 作用域在模块中的体现",
+            "duration": 306,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155114,
+            "page": 266,
+            "from": "vupload",
+            "part": "6 预解析的必要性",
+            "duration": 251,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155198,
+            "page": 267,
+            "from": "vupload",
+            "part": "7 模块的具名导出与导入",
+            "duration": 187,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155271,
+            "page": 268,
+            "from": "vupload",
+            "part": "8 批量导入与建议",
+            "duration": 143,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155323,
+            "page": 269,
+            "from": "vupload",
+            "part": "9 别名使用",
+            "duration": 116,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155365,
+            "page": 270,
+            "from": "vupload",
+            "part": "10 default默认导出",
+            "duration": 187,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155428,
+            "page": 271,
+            "from": "vupload",
+            "part": "11 混合导入导出的使用",
+            "duration": 130,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155477,
+            "page": 272,
+            "from": "vupload",
+            "part": "12 默认导出模块的使用规范",
+            "duration": 168,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155526,
+            "page": 273,
+            "from": "vupload",
+            "part": "13 模块的合并导出",
+            "duration": 404,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155676,
+            "page": 274,
+            "from": "vupload",
+            "part": "14 按需动态加载模块",
+            "duration": 220,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155755,
+            "page": 275,
+            "from": "vupload",
+            "part": "15 WEBPACK构建项目的软件安装",
+            "duration": 93,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138155779,
+            "page": 276,
+            "from": "vupload",
+            "part": "16 WEBPACK完成项目的打包编译",
+            "duration": 281,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156190,
+            "page": 277,
+            "from": "vupload",
+            "part": "1 正则表达式与章节介绍",
+            "duration": 183,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156244,
+            "page": 278,
+            "from": "vupload",
+            "part": "2 体验正则表达式的魅力",
+            "duration": 190,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156310,
+            "page": 279,
+            "from": "vupload",
+            "part": "3 字面量创建正则表达式",
+            "duration": 150,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156356,
+            "page": 280,
+            "from": "vupload",
+            "part": "4 使用对象创建正则表达式",
+            "duration": 350,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156499,
+            "page": 281,
+            "from": "vupload",
+            "part": "5 选择符的使用",
+            "duration": 250,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156585,
+            "page": 282,
+            "from": "vupload",
+            "part": "6 原子表与原子组中的选择符",
+            "duration": 115,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156633,
+            "page": 283,
+            "from": "vupload",
+            "part": "7 转义需要好好理解",
+            "duration": 443,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156800,
+            "page": 284,
+            "from": "vupload",
+            "part": "8 字符边界约束",
+            "duration": 365,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138156942,
+            "page": 285,
+            "from": "vupload",
+            "part": "9 数值与空白元字符",
+            "duration": 447,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138157123,
+            "page": 286,
+            "from": "vupload",
+            "part": "10 w与W元字符",
+            "duration": 415,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138157328,
+            "page": 287,
+            "from": "vupload",
+            "part": "11 点元字符的使用",
+            "duration": 289,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138157548,
+            "page": 288,
+            "from": "vupload",
+            "part": "12 如何精巧的匹配所有字符",
+            "duration": 219,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138157719,
+            "page": 289,
+            "from": "vupload",
+            "part": "13 i与g模式修正符",
+            "duration": 177,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138157901,
+            "page": 290,
+            "from": "vupload",
+            "part": "14 m多行匹配修正符实例",
+            "duration": 329,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138158183,
+            "page": 291,
+            "from": "vupload",
+            "part": "15 汉字与字符属性",
+            "duration": 272,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138158371,
+            "page": 292,
+            "from": "vupload",
+            "part": "16 lastIndex属性的作用",
+            "duration": 198,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138158566,
+            "page": 293,
+            "from": "vupload",
+            "part": "17 有效率的y模式",
+            "duration": 261,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138158802,
+            "page": 294,
+            "from": "vupload",
+            "part": "18 原子表基本使用",
+            "duration": 195,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138158973,
+            "page": 295,
+            "from": "vupload",
+            "part": "19 区间匹配",
+            "duration": 293,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138159238,
+            "page": 296,
+            "from": "vupload",
+            "part": "20 排除匹配",
+            "duration": 130,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138159377,
+            "page": 297,
+            "from": "vupload",
+            "part": "21 原子表字符不解析",
+            "duration": 135,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138159522,
+            "page": 298,
+            "from": "vupload",
+            "part": "22 使用原子表匹配所有内容",
+            "duration": 163,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138159584,
+            "page": 299,
+            "from": "vupload",
+            "part": "23 正则操作DOM元素",
+            "duration": 184,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138159660,
+            "page": 300,
+            "from": "vupload",
+            "part": "24 认识原子组",
+            "duration": 250,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138159750,
+            "page": 301,
+            "from": "vupload",
+            "part": "25 邮箱验证中原子组的使用",
+            "duration": 416,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138159959,
+            "page": 302,
+            "from": "vupload",
+            "part": "26 原子组引用完成替换操作",
+            "duration": 247,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160133,
+            "page": 303,
+            "from": "vupload",
+            "part": "27 嵌套分组与不记录组",
+            "duration": 325,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160268,
+            "page": 304,
+            "from": "vupload",
+            "part": "28 多种重复匹配基本使用",
+            "duration": 224,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160357,
+            "page": 305,
+            "from": "vupload",
+            "part": "29 重复匹配对原子组影响与电话号正则",
+            "duration": 163,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160411,
+            "page": 306,
+            "from": "vupload",
+            "part": "30 网站用户名验证",
+            "duration": 171,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160455,
+            "page": 307,
+            "from": "vupload",
+            "part": "31 批量使用正则完成密码验证",
+            "duration": 193,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160521,
+            "page": 308,
+            "from": "vupload",
+            "part": "32 禁止贪婪",
+            "duration": 134,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160568,
+            "page": 309,
+            "from": "vupload",
+            "part": "33 标签替换的禁止贪婪使用",
+            "duration": 220,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160644,
+            "page": 310,
+            "from": "vupload",
+            "part": "34 使用matchAll完成全局匹配",
+            "duration": 210,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160723,
+            "page": 311,
+            "from": "vupload",
+            "part": "35 为低端浏览器定义原型方法matchAll",
+            "duration": 316,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160828,
+            "page": 312,
+            "from": "vupload",
+            "part": "36 使用exec完成全局匹配",
+            "duration": 286,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138160938,
+            "page": 313,
+            "from": "vupload",
+            "part": "37 字符串正则方法search与match",
+            "duration": 226,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161040,
+            "page": 314,
+            "from": "vupload",
+            "part": "38 字符串正则方法matchAll与split",
+            "duration": 135,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161090,
+            "page": 315,
+            "from": "vupload",
+            "part": "39 $符在正则替换中的使用",
+            "duration": 298,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161212,
+            "page": 316,
+            "from": "vupload",
+            "part": "40 $&使用",
+            "duration": 76,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161242,
+            "page": 317,
+            "from": "vupload",
+            "part": "41 原子组在替换中的使用技巧",
+            "duration": 350,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161395,
+            "page": 318,
+            "from": "vupload",
+            "part": "42 原子组别名",
+            "duration": 114,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161441,
+            "page": 319,
+            "from": "vupload",
+            "part": "43 使用原子组别名优化正则",
+            "duration": 218,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161525,
+            "page": 320,
+            "from": "vupload",
+            "part": "44 正则方法test",
+            "duration": 210,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161615,
+            "page": 321,
+            "from": "vupload",
+            "part": "45 正则方法exec",
+            "duration": 163,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161669,
+            "page": 322,
+            "from": "vupload",
+            "part": "46 零宽先行断言",
+            "duration": 124,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161701,
+            "page": 323,
+            "from": "vupload",
+            "part": "47 使用断言规范价格",
+            "duration": 155,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161768,
+            "page": 324,
+            "from": "vupload",
+            "part": "48 零宽后行断言",
+            "duration": 209,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161835,
+            "page": 325,
+            "from": "vupload",
+            "part": "49 使用断言模糊电话号",
+            "duration": 110,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161878,
+            "page": 326,
+            "from": "vupload",
+            "part": "50 零宽负向先行断言",
+            "duration": 125,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161926,
+            "page": 327,
+            "from": "vupload",
+            "part": "51 断言限制用户名关键词",
+            "duration": 213,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138161998,
+            "page": 328,
+            "from": "vupload",
+            "part": "52 零宽负向后行断言",
+            "duration": 94,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 138162032,
+            "page": 329,
+            "from": "vupload",
+            "part": "53 使用断言排除法统一数据",
+            "duration": 216,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141357033,
+            "page": 330,
+            "from": "vupload",
+            "part": "1 什么是异步编程？",
+            "duration": 495,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141357270,
+            "page": 331,
+            "from": "vupload",
+            "part": "2 异步加载图片体验JS任务操作",
+            "duration": 365,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141357462,
+            "page": 332,
+            "from": "vupload",
+            "part": "3 定时器的任务轮询",
+            "duration": 540,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141357801,
+            "page": 333,
+            "from": "vupload",
+            "part": "4 通过文件依赖了解任务排序",
+            "duration": 434,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141358091,
+            "page": 334,
+            "from": "vupload",
+            "part": "5 ajax异步请求任务管理",
+            "duration": 397,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141358348,
+            "page": 335,
+            "from": "vupload",
+            "part": "6 Promise微任务处理机制",
+            "duration": 475,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141358557,
+            "page": 336,
+            "from": "vupload",
+            "part": "7 宏任务与微任务执行顺序",
+            "duration": 327,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141358701,
+            "page": 337,
+            "from": "vupload",
+            "part": "8 宏任务的提升原来是误解",
+            "duration": 277,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141358821,
+            "page": 338,
+            "from": "vupload",
+            "part": "9 Promise单一状态与状态中转",
+            "duration": 301,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141358983,
+            "page": 339,
+            "from": "vupload",
+            "part": "10 了解Promise.then的基本语法",
+            "duration": 191,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141359093,
+            "page": 340,
+            "from": "vupload",
+            "part": "11 Promise.then也是一个Promise",
+            "duration": 275,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141359271,
+            "page": 341,
+            "from": "vupload",
+            "part": "12 then返回值的处理技巧",
+            "duration": 467,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141359631,
+            "page": 342,
+            "from": "vupload",
+            "part": "13 其它类型的Promise封装",
+            "duration": 228,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141359804,
+            "page": 343,
+            "from": "vupload",
+            "part": "14 使用Promise封装AJAX异步请求",
+            "duration": 414,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141360045,
+            "page": 344,
+            "from": "vupload",
+            "part": "15 Promise多种错误监测与catch使用",
+            "duration": 418,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141360329,
+            "page": 345,
+            "from": "vupload",
+            "part": "16 自定义错误处理",
+            "duration": 400,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141360699,
+            "page": 346,
+            "from": "vupload",
+            "part": "17 使用finally实现异步加载动画",
+            "duration": 233,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141360858,
+            "page": 347,
+            "from": "vupload",
+            "part": "18 Promise异步加载图片",
+            "duration": 156,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141360937,
+            "page": 348,
+            "from": "vupload",
+            "part": "19 封装setTimeout定时器",
+            "duration": 145,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141361014,
+            "page": 349,
+            "from": "vupload",
+            "part": "20 构建扁平化的setInterval",
+            "duration": 315,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141361214,
+            "page": 350,
+            "from": "vupload",
+            "part": "21 script脚本的Promise加载引擎",
+            "duration": 169,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141361319,
+            "page": 351,
+            "from": "vupload",
+            "part": "22 Promise.resolve缓存后台数据",
+            "duration": 443,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141361607,
+            "page": 352,
+            "from": "vupload",
+            "part": "23 Promise.reject使用",
+            "duration": 212,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141361747,
+            "page": 353,
+            "from": "vupload",
+            "part": "24 Promise.all批量获取数据",
+            "duration": 307,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141361934,
+            "page": 354,
+            "from": "vupload",
+            "part": "25 Promise.allSettled使用",
+            "duration": 208,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362037,
+            "page": 355,
+            "from": "vupload",
+            "part": "26 Promise.race后台请求超时处理",
+            "duration": 282,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362148,
+            "page": 356,
+            "from": "vupload",
+            "part": "27 Promise队列原理",
+            "duration": 207,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362242,
+            "page": 357,
+            "from": "vupload",
+            "part": "28 使用Map实现Promise队列",
+            "duration": 235,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362344,
+            "page": 358,
+            "from": "vupload",
+            "part": "29 reduce封装Promise队列",
+            "duration": 160,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362407,
+            "page": 359,
+            "from": "vupload",
+            "part": "30 使用队列渲染数据",
+            "duration": 358,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362545,
+            "page": 360,
+            "from": "vupload",
+            "part": "31 async与await语法糖",
+            "duration": 384,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362694,
+            "page": 361,
+            "from": "vupload",
+            "part": "32 async与await执行异步请示",
+            "duration": 206,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362785,
+            "page": 362,
+            "from": "vupload",
+            "part": "33 async延时函数",
+            "duration": 162,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362847,
+            "page": 363,
+            "from": "vupload",
+            "part": "34 await制作加载进度条",
+            "duration": 310,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141362969,
+            "page": 364,
+            "from": "vupload",
+            "part": "35 class与await的结合",
+            "duration": 149,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141363042,
+            "page": 365,
+            "from": "vupload",
+            "part": "36 异步封装在类内部",
+            "duration": 152,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141363100,
+            "page": 366,
+            "from": "vupload",
+            "part": "37 async与await多种声明",
+            "duration": 160,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141363169,
+            "page": 367,
+            "from": "vupload",
+            "part": "38 async基本错误处理",
+            "duration": 226,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141363263,
+            "page": 368,
+            "from": "vupload",
+            "part": "39 标准的await错误处理流程",
+            "duration": 394,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 141363427,
+            "page": 369,
+            "from": "vupload",
+            "part": "40 await并行执行技巧",
+            "duration": 283,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144684575,
+            "page": 370,
+            "from": "vupload",
+            "part": "1 宏任务与微任务",
+            "duration": 345,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144684696,
+            "page": 371,
+            "from": "vupload",
+            "part": "2 定时器的任务编排",
+            "duration": 289,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144684817,
+            "page": 372,
+            "from": "vupload",
+            "part": "3 Promise微任务处理逻辑",
+            "duration": 356,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144684956,
+            "page": 373,
+            "from": "vupload",
+            "part": "4 DOM渲染任务",
+            "duration": 166,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144685030,
+            "page": 374,
+            "from": "vupload",
+            "part": "5 任务共享内存",
+            "duration": 180,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144685089,
+            "page": 375,
+            "from": "vupload",
+            "part": "6 进度条实例体验任务轮询",
+            "duration": 293,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144685197,
+            "page": 376,
+            "from": "vupload",
+            "part": "7 任务拆分成多个子任务",
+            "duration": 307,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144685312,
+            "page": 377,
+            "from": "vupload",
+            "part": "8 Promise微任务处理复杂业务",
+            "duration": 263,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709024,
+            "page": 378,
+            "from": "vupload",
+            "part": "1 课程介绍",
+            "duration": 127,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709153,
+            "page": 379,
+            "from": "vupload",
+            "part": "2 声明PROMISE类并绑定THIS",
+            "duration": 436,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709341,
+            "page": 380,
+            "from": "vupload",
+            "part": "3 状态保护与执行者异步捕获",
+            "duration": 125,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709386,
+            "page": 381,
+            "from": "vupload",
+            "part": "4 THEN的基础构建",
+            "duration": 270,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709511,
+            "page": 382,
+            "from": "vupload",
+            "part": "5 实现THEN的异步操作与异常捕获",
+            "duration": 255,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709627,
+            "page": 383,
+            "from": "vupload",
+            "part": "6 PROMISE的PENDDING状态处理",
+            "duration": 269,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709740,
+            "page": 384,
+            "from": "vupload",
+            "part": "7 PENDING状态异常处理",
+            "duration": 202,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709825,
+            "page": 385,
+            "from": "vupload",
+            "part": "8 PENDING的异步任务处理技巧",
+            "duration": 176,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709915,
+            "page": 386,
+            "from": "vupload",
+            "part": "9 THEN链式操作原理分析",
+            "duration": 153,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144709984,
+            "page": 387,
+            "from": "vupload",
+            "part": "10 实现PROMISE链式操作",
+            "duration": 341,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144710163,
+            "page": 388,
+            "from": "vupload",
+            "part": "11 THEN新增PROMISE异常处理",
+            "duration": 164,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144710275,
+            "page": 389,
+            "from": "vupload",
+            "part": "12 实现THEN的穿透传递",
+            "duration": 117,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144710362,
+            "page": 390,
+            "from": "vupload",
+            "part": "13 THEN返回PROMISE的处理",
+            "duration": 578,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144710679,
+            "page": 391,
+            "from": "vupload",
+            "part": "14 THEN代码冗余优化",
+            "duration": 237,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144710815,
+            "page": 392,
+            "from": "vupload",
+            "part": "15 PROMISE返回类型约束",
+            "duration": 259,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144710993,
+            "page": 393,
+            "from": "vupload",
+            "part": "16 实现RESOLVE与REJECT",
+            "duration": 412,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144711276,
+            "page": 394,
+            "from": "vupload",
+            "part": "17 PROMISE的ALL方法实现",
+            "duration": 396,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        },
+        {
+            "cid": 144711481,
+            "page": 395,
+            "from": "vupload",
+            "part": "18 PROMISE的RACE静态方法实现",
+            "duration": 239,
+            "vid": "",
+            "weblink": "",
+            "dimension": {
+                "width": 1920,
+                "height": 1080,
+                "rotate": 0
+            }
+        }
+    ]
+}

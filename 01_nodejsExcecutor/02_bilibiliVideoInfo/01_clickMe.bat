@@ -1,2 +1,7 @@
-node app.js
-"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" %~dp0/1.html
+node 02_getRespObjJson.js
+
+timeout /nobreak /t 3
+
+node 03_getRespObjJsonFile.js
+
+pause 
