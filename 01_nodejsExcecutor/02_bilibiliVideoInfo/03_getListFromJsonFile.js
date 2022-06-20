@@ -1,6 +1,8 @@
 const fs = require('fs');
+const OUTPUTFILE = '___list.txt';
+const INPUTFILE = '___obj.txt';
 
-fs.readFile('_obj.json', (err, data) => {
+fs.readFile(INPUTFILE, (err, data) => {
   if (err) {
     throw err;
   }
@@ -11,7 +13,7 @@ fs.readFile('_obj.json', (err, data) => {
   for (const item of listObj) {
     listStr += item.page + '\t' + item.part + '\t' + item.duration + '\r\n';
   }
-  fs.writeFile('_list.txt', listStr, (err) => {
+  fs.writeFile(OUTPUTFILE, listStr, (err) => {
     if (err) {
       console.error(err);
       return;

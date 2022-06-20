@@ -5,6 +5,7 @@ const readline = require('readline').createInterface({
 const url = require('url');
 const request = require('request'); // npm install request -g
 const fs = require('fs');
+const OUTPUTFILE = '___obj.txt';
 // 定义如果回调函数不返回true，就会递归执行的方法。
 // 不符合要求时，回调函数返回true，就会再次调用这个方法。
 function questionAgain(present, fn) {
@@ -39,7 +40,7 @@ questionAgain(`请输入b站视频页网址\r\n`, (urlStr) => {
       // 将需要的数据写入文件
       // 返回的body是字符串，使用JOSN.parse解析撑对象后，
       // 使用JSON.stringify，第三个参数为缩进空格数，即将返回的字符串转换成格式化的JSON字符串输出到文件。
-      fs.writeFile('_obj.json', JSON.stringify(JSON.parse(body), null, 4), function (err) {
+      fs.writeFile(OUTPUTFILE, JSON.stringify(JSON.parse(body), null, 4), function (err) {
         if (err) {
           return console.error(err);
         }
