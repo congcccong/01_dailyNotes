@@ -36,7 +36,13 @@ vscode 的代码格式化插件 prettier 的配置文件，自动格式化代码
 
 ## 内容说明
 
-- 01_NodejsExcecutor     nodejs写的执行程序
-  - 01_typeApp-master    生成打字练习的网页
-  - 02_bilibiliVideoInfo     输入b站网址，生成b站视频列表
-- 02_JsByHoudunren  后盾人的js学习笔记
+### 01_NodejsExcecutor    
+
+ nodejs写的执行程序
+
+- 01_typeApp-master    生成打字练习的网页
+- 02_bilibiliVideoInfo     输入b站网址，生成b站视频列表
+
+### 02_JsByHoudunren 
+
+ 后盾人的js学习笔记
