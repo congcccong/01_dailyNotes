@@ -8,7 +8,7 @@ fs.readFile(INPUTFILE, (err, data) => {
   }
   // 解析读来的对象
   let listObj = JSON.parse(data).data;
-  let listStr;
+  let listStr = '';
   // 遍历整理向文件输出的内容
   for (const item of listObj) {
     listStr += item.page + '\t' + item.part + '\t' + item.duration + '\r\n';
