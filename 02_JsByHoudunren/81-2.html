@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>asdf</li>
+      <li>12345</li>
+    </ul>
+    <div>
+      <label for="name">名称</label>
+      <input type="text" name="name" id="name" />
+      <button class="box">提交</button>
+    </div>
+  </body>
+  <script>
+    'use strict';
+    // 使用reduce去重
+    let goods = [
+      { name: 'iphone', price: 12000 },
+      { name: 'imac', price: 25000 },
+      { name: 'ipad', price: 3600 },
+      { name: 'ipad', price: 3600 },
+      { name: 'imac', price: 25000 },
+    ];
+    function filterGoods(array) {
+      return array.reduce((prev, cur) => {
+        // let find = prev.find((item) => item.name === cur.name);
+        let find = prev.some((item) => item.name === cur.name);
+        if (!find) {
+          prev.push(cur);
+        }
+        return prev;
+      }, []);
+    }
+    console.table(filterGoods(goods));
+  </script>
+</html>

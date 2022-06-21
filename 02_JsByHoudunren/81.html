@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>asdf</li>
+      <li>12345</li>
+    </ul>
+    <div>
+      <label for="name">名称</label>
+      <input type="text" name="name" id="name" />
+      <button class="box">提交</button>
+    </div>
+  </body>
+  <script>
+    'use strict';
+    // 查找购物车里最贵的商品
+    let cart = [
+      { name: 'iphone', price: 12000 },
+      { name: 'imac', price: 25000 },
+      { name: 'ipad', price: 3600 },
+    ];
+    function maxPrice(array) {
+      return array.reduce(function (prev, cur, index) {
+        return prev.price > cur.price ? prev : cur;
+      });
+    }
+    console.log(maxPrice(cart));
+  </script>
+</html>

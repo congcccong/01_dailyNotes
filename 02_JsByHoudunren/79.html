@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>asdf</li>
+      <li>12345</li>
+    </ul>
+    <div>
+      <label for="name">名称</label>
+      <input type="text" name="name" id="name" />
+      <button class="box">提交</button>
+    </div>
+  </body>
+  <script>
+    'use strict';
+
+    let lessons = [
+      { title: '媒体查询响应式布局', category: 'css' },
+      { title: 'FLEX 弹性盒模型', category: 'css' },
+      { title: 'MYSQL多表查询随意操作', category: 'mysql' },
+    ];
+
+    // 原数组变了
+    // let hd = lessons.map(function (item, index, array) {
+    //   item.click = 100;
+    //   return item;
+    // });
+
+    // 原数组不改变1 Object.assign
+    // let hd = lessons.map(function (value) {
+    //   return Object.assign({ click: 100 }, value);
+    // });
+
+    // 原数组不变方法2
+    let hd = lessons.map(function (value) {
+      return {
+        title: value.title,
+        category: value.category,
+        click: 100,
+      };
+    });
+
+    console.table(hd);
+    console.table(lessons);
+  </script>
+</html>
