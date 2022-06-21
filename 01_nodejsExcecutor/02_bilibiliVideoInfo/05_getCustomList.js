@@ -11,7 +11,7 @@ fs.readFile(INPUTFILE, (err, data) => {
   let listStr = '';
   // 遍历整理向文件输出的内容
   for (const item of listObj) {
-    listStr += item.page + '\t' + item.part + item.page + '\t' + item.duration + '\r\n';
+    listStr += item.part + '_' + item.page + '\r\n';
   }
   fs.writeFile(OUTPUTFILE, listStr, (err) => {
     if (err) {
