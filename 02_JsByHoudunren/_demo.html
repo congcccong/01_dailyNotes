@@ -27,21 +27,12 @@
   </body>
   <script>
     'use strict';
-
-    const site = Symbol('网站名称');
-    class User {
-      constructor(name) {
-        this[site] = '后盾人';
-        this.name = name;
-      }
-      getName() {
-        return `${this[site]}-${this.name}`;
-      }
-    }
-    const hd = new User('向军大叔');
-    console.log(hd.getName());
-    for (const key in hd) {
-      console.log(key);
-    }
+    let user1 = { name: 'lisi', key: Symbol() };
+    let user2 = { name: 'lisi', key: Symbol() };
+    let grade = {
+      [user1.key]: { js: 100, css: 89 },
+      [user2.key]: { js: 35, css: 55 },
+    };
+    console.log(grade);
   </script>
 </html>

@@ -1,5 +1,5 @@
 # 自定义忽略内容
-___*.txt
+___*.*
 
 # Compiled class file
 *.class
