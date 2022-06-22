@@ -12,6 +12,8 @@ Symbol 的值是唯一的，独一无二的不会重复的
 
 ## 基础知识
 
+**声明定义Symbol的几种方式_87**
+
 ### Symbol
 
  ```js
@@ -63,6 +65,8 @@ console.log(hd.description); //后盾人
 - 使用 Symbol.for 会在系统中将 Symbol 登记
 - 使用 Symbol 则不会登记
 
+> Symbol.for 声明的symbol是全局定义的，而普通symbol则没有这个特性。
+
  ```js
 let hd = Symbol.for("后盾人");
 let edu = Symbol.for("后盾人");
@@ -76,12 +80,17 @@ console.log(hd == edu); //true
  ```js
 let hd = Symbol.for("后盾人");
 console.log(Symbol.keyFor(hd)); //后盾人
-console.log(hd.description); //后盾人
 
 let edu = Symbol("houdunren");
 console.log(Symbol.keyFor(edu)); //undefined
+
+// 关于 description 和 toString()
+console.log(hd.description); //后盾人
 console.log(edu.description); //houdunren
+console.log(edu.toString()); //Symbol(houdunren)
  ```
+
+**使用Symbol解决字符串耦合问题_88**
 
 ### 对象属性
 
@@ -110,7 +119,21 @@ let obj = {
 console.log(obj[symbol]); //houdunren.com
  ```
 
+```js
+let user1 = { name: 'lisi', key: Symbol() };
+let user2 = { name: 'lisi', key: Symbol() };
+let grade = {
+    [user1.key]: { js: 100, css: 89 },
+    [user2.key]: { js: 35, css: 55 },
+};
+console.log(grade); //{Symbol(): {…}, Symbol(): {…}}
+```
+
+> 学习备注： 对象的属性名用`[变量]`表示时，如果里面变量是引用数据类型，会调用 toString 方法赋值给属性名，因此如果上面例子中grade的属性写[user1]、[user2]时，他们的实际属性名都变成了`[object Object]` ，所以还是会产生覆盖。
+
 ## 实例操作
+
+**Symbol在缓存容器中的使用_89**
 
 ### 缓存操作
 
@@ -141,6 +164,8 @@ Cache.set(user.key, user);
 Cache.set(cart.key, cart);
 console.log(Cache.get(user.key));
  ```
+
+**扩展特性与对象属性保护_90**
 
 ### 遍历属性
 
@@ -201,5 +226,5 @@ for (const key in hd) {
   console.log(key);
 }
 //后盾人-向军大叔
-//n
+//name
  ```
