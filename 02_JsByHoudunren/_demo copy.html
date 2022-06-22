@@ -27,21 +27,20 @@
   </body>
   <script>
     'use strict';
+    // 动画案例
+    const div = document.querySelector('div');
 
-    const site = Symbol('网站名称');
-    class User {
-      constructor(name) {
-        this[site] = '后盾人';
-        this.name = name;
-      }
-      getName() {
-        return `${this[site]}-${this.name}`;
-      }
-    }
-    const hd = new User('向军大叔');
-    console.log(hd.getName());
-    for (const key in hd) {
-      console.log(key);
-    }
+    [...div.textContent].reduce(function (prev, cur, index) {
+      prev == index && (div.innerHTML = '');
+      let span = document.createElement('span');
+      span.innerHTML = cur;
+      div.append(span);
+      span.addEventListener('mouseover', function () {
+        this.classList.add('color');
+      });
+      span.addEventListener('animationend', function () {
+        this.classList.remove('color');
+      });
+    }, 0);
   </script>
 </html>
