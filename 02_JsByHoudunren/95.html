@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding: 100px;
+      }
+      input {
+        width: 208px;
+        height: 30px;
+      }
+      ul li {
+        list-style: none;
+        padding: 5px;
+        width: 200px;
+        border: solid 1px #ddd;
+      }
+      li:nth-of-type(even) {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="hd" />
+    <ul>
+      <li>asdf</li>
+      <li>123457</li>
+    </ul>
+  </body>
+  <script>
+    'use strict';
+
+    let obj = {
+      data: new Set(),
+      // set keyword(word) {
+      keyword(word) {
+        this.data.add(word);
+      },
+      show() {
+        let ul = document.querySelector('ul');
+        ul.innerHTML = '';
+        this.data.forEach((value) => {
+          ul.innerHTML += `<li>${value}</li>`;
+        });
+      },
+    };
+    document.querySelector('input').addEventListener('blur', function () {
+      console.log(this.value);
+      // obj.keyword = this.value;
+      obj.keyword(this.value);
+      obj.show();
+      this.value = '';
+    });
+  </script>
+</html>

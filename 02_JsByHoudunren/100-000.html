@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding: 100px;
+      }
+      li {
+        list-style: none;
+        width: 270px;
+        border: solid 2px #ca241e;
+        line-height: 25px;
+        padding: 5px;
+        margin: 8px;
+      }
+      li > span {
+        float: right;
+        background-color: rgb(12, 129, 12);
+        padding: 0 8px;
+        border-radius: 5px;
+        color: white;
+      }
+      .remove {
+        border: 2px solid #bbb;
+        color: #aaa;
+      }
+      .remove > span {
+        background-color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>asdfsp <span>X</span></li>
+      <li>123457<span>X</span></li>
+      <li>houdunren.com<span>X</span></li>
+    </ul>
+  </body>
+  <script>
+    'use strict';
+    class Todo {
+      constructor() {
+        this.items = document.querySelectorAll('ul>li');
+        this.lists = new WeakSet();
+        this.items.forEach((value) => this.lists.add(value));
+        console.log(this.lists);
+      }
+      run() {
+        this.addEvent();
+      }
+      addEvent() {
+        this.items.forEach((value) => {
+          let span = value.querySelector('span');
+          span.addEventListener('click', (event) => {
+            let parent = event.target.parentElement;
+            if (this.lists.has(parent)) {
+              event.target.parentElement.classList.add('remove');
+              this.lists.delete(parent);
+            } else {
+              parent.classList.remove('remove');
+              this.lists.add(parent);
+            }
+          });
+        });
+      }
+    }
+    new Todo().run();
+  </script>
+</html>
