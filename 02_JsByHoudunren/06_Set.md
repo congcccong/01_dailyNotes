@@ -2,7 +2,7 @@
 
 ## Set
 
-**Set类型与Array与Object对比分析_91**
+**Set 类型与 Array 与 Object 对比分析\_91**
 
 > Set 类似于值不能重复的数组。
 
@@ -15,10 +15,10 @@
 
 ### 基本使用
 
-Set和对象比较：对象的属性名，最终都会转为字符串
+Set 和对象比较：对象的属性名，最终都会转为字符串
 
 ```js
-let obj = { 1: 'hdcms', "1": 'houdunren' };
+let obj = { 1: 'hdcms', 1: 'houdunren' };
 console.table(obj); //{1:"houdunren"}
 ```
 
@@ -32,7 +32,7 @@ console.log(hd[obj.toString()]); //后盾人
 console.log(hd['[object Object]']); //后盾人
 ```
 
-**Set元素检测与管理_92**
+**Set 元素检测与管理\_92**
 
 使用数组做初始数据
 
@@ -57,7 +57,7 @@ set.add('1');
 console.log(set); //Set(2) {1, "1"}
 ```
 
-使用 `add` 添加元素，不允许重复添加`hdcms`值 （add函数返回值是这个set对象）0
+使用 `add` 添加元素，不允许重复添加`hdcms`值 （add 函数返回值是这个 set 对象）0
 
 ```js
 let hd = new Set();
@@ -114,7 +114,7 @@ hd.clear();
 console.log(hd.values()); //SetIterator {}
 ```
 
-**类型之间互相帮助才是好兄弟_93**
+**类型之间互相帮助才是好兄弟\_93**
 
 ### 数组转换
 
@@ -149,7 +149,7 @@ const arr = [1, 2, 3, 5, 2, 3];
 console.log(...new Set(arr)); // 1,2,4,5
 ```
 
-**遍历Set类型的方式_94**
+**遍历 Set 类型的方式\_94**
 
 ### 遍历数据
 
@@ -162,16 +162,16 @@ console.log(hd.keys()); //SetIterator {"hdcms", "houdunren"}
 console.log(hd.entries()); //SetIterator {"hdcms" => "hdcms", "houdunren" => "houdunren"}
 ```
 
-> 学习备注： 
+> 学习备注：
 >
-> 对数组执行这三个方法返回的都是Array Iterator {}。 使用for of 遍历 Iterator 对象，分别返回key，value，[key,value]。其中Set的key和value相同。
+> 对数组执行这三个方法返回的都是 Array Iterator {}。 使用 for of 遍历 Iterator 对象，分别返回 key，value，[key,value]。其中 Set 的 key 和 value 相同。
 >
-> 如果set对象里是引用类型的，返回的key和value也都是引用类型的。
+> 如果 set 对象里是引用类型的，返回的 key 和 value 也都是引用类型的。
 >
 > ```js
 > const hd = new Set(['hdcms', [4, 5, 6]]);
 > for (const ele of hd.entries()) {
->     console.log(ele);
+>   console.log(ele);
 > }
 > // (2) ['hdcms', 'hdcms']
 > // (2) [Array(3), Array(3)]
@@ -201,20 +201,20 @@ for (const iterator of set) {
 
 > 学习备注：
 >
-> 在 for/of 或者 forEach 遍历 Set 的过程中，我尝试在遍历中可不可以单独更改set的value，这样就会使key和value值不通。尝试过成功，发现set是不能通过set[keys]访问到元素的，所以在遍历的时候不能对set的值更改。使用set[key]添加的属性将set作为了对象，添加了额外的属性。在使用for/in遍历对象时，只能访问到添加的属性，而不能访问到作为set中存放的元素。
+> 在 for/of 或者 forEach 遍历 Set 的过程中，我尝试在遍历中可不可以单独更改 set 的 value，这样就会使 key 和 value 值不通。尝试过成功，发现 set 是不能通过 set[keys]访问到元素的，所以在遍历的时候不能对 set 的值更改。使用 set[key]添加的属性将 set 作为了对象，添加了额外的属性。在使用 for/in 遍历对象时，只能访问到添加的属性，而不能访问到作为 set 中存放的元素。
 >
 > ```js
 > let arr = [7, 6, 2, 8, 2, 6];
 > let set = new Set(arr);
 > for (let iterator of set.keys()) {
->     set[iterator] = 'ww';
->     console.log(iterator); //7 6 2 8
+>   set[iterator] = 'ww';
+>   console.log(iterator); //7 6 2 8
 > }
-> console.log(set); 
+> console.log(set);
 > //Set(4) {7, 6, 2, 8}
-> 
+>
 > for (const key in set) {
->     console.log(key, set[key]);
+>   console.log(key, set[key]);
 > }
 > // '2' 'ww'
 > // '6' 'ww'
@@ -222,13 +222,11 @@ for (const iterator of set) {
 > // '8' 'ww'
 > ```
 >
-> 而数组则可以通过arr[index]来对元素值进行更改。
+> 而数组则可以通过 arr[index]来对元素值进行更改。
 >
-> for/of 循环遍历数组/Set对象，默认使用的values方法。即直接遍历对象是遍历 values() 方法返回的迭代器的简写形式。for/of 其实是遍历迭代器的。
+> for/of 循环遍历数组/Set 对象，默认使用的 values 方法。即直接遍历对象是遍历 values() 方法返回的迭代器的简写形式。for/of 其实是遍历迭代器的。
 
-
-
-**使用Set处理网站关键词_95**
+**使用 Set 处理网站关键词\_95**
 
 ### 搜索实例
 
@@ -298,7 +296,7 @@ for (const iterator of set) {
 </script>
 ```
 
-**并集-交集-差集算法实现_96**
+**并集-交集-差集算法实现\_96**
 
 ### 交集
 
@@ -335,7 +333,7 @@ console.log(newSet);
 
 ## WeakSet
 
-**WeakSet语法介绍_97**
+**WeakSet 语法介绍\_97**
 
 WeakSet 结构同样不会存储重复的值，它的成员必须只能是对象类型的值。
 
@@ -385,9 +383,9 @@ hd.delete(arr);
 console.log(hd.has(arr));
 ```
 
-**引用类型的垃圾回收原理_98**
+**引用类型的垃圾回收原理\_98**
 
-**WeakSet弱引用特性_99**
+**WeakSet 弱引用特性\_99**
 
 ### 垃圾回收
 
@@ -412,7 +410,7 @@ setTimeout(() => {
 }, 1000);
 ```
 
-**TODO任务列表中使用WeakSet_100**
+**TODO 任务列表中使用 WeakSet_100**
 
 ### 案例操作
 
