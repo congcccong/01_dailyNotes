@@ -2,10 +2,19 @@
 
 ## Map
 
+**Map 类型特点与创建方法\_101**
+
 Map 是一组键值对的结构，用于解决以往不能用对象做为键的问题
 
 - 具有极快的查找速度
+
 - 函数、对象、基本类型都可以作为键或值
+
+  > 学习备注：
+  >
+  > 对象当中，键只能是字符串；而 Map 当中什么都可以作为键或值。
+  >
+  > Map 的 key 值不重复，重复添加会覆盖前面的键值对。
 
 ### 声明定义
 
@@ -58,7 +67,9 @@ console.log(hd.get(arr)); //houdunren.com
 console.log(hd.get(['后盾人'])); //undefined
 ```
 
-### 获取数量
+**Map 类型增删改查操作\_102**
+
+### 获取数量: `size`
 
 获取数据数量
 
@@ -66,7 +77,7 @@ console.log(hd.get(['后盾人'])); //undefined
 console.log(map.size);
 ```
 
-### 元素检测
+### 元素检测: `has()`
 
 检测元素是否存在
 
@@ -74,7 +85,7 @@ console.log(map.size);
 console.log(map.has(obj1));
 ```
 
-### 读取元素
+### 读取元素: `get()`
 
 ```js
 let map = new Map();
@@ -87,7 +98,7 @@ map.set(obj, 'houdunren.com');
 console.log(map.get(obj));
 ```
 
-### 删除元素
+### 删除元素: `delete()`,`clear()`
 
 使用 `delete()` 方法删除单个元素
 
@@ -98,10 +109,10 @@ let obj = {
 };
 
 map.set(obj, 'houdunren.com');
-console.log(map.get(obj));
+console.log(map.get(obj));//houdunren.com
 
 map.delete(obj);
-console.log(map.get(obj));
+console.log(map.get(obj)); //undefined
 ```
 
 使用`clear`方法清除 Map 所有元素
@@ -124,12 +135,14 @@ map.set(obj2, {
   title: '后盾人',
 });
 
-console.log(map.size);
-console.log(map.clear());
-console.log(map.size);
+console.log(map.size); //2
+console.log(map.clear()); //undefined
+console.log(map.size); //0
 ```
 
-### 遍历数据
+**遍历 Map 类型数据\_103**
+
+### 遍历数据: `for/of`,`forEach`
 
 使用 `keys()/values()/entries()` 都可以返回可遍历的迭代对象。
 
@@ -158,7 +171,7 @@ for (const value of hd.values()) {
 }
 ```
 
-使用`for/of`遍历操作，直播遍历 Map 等同于使用`entries()` 函数
+使用`for/of`遍历操作，直接遍历 Map 等同于使用`entries()` 函数
 
 ```js
 let hd = new Map([
@@ -181,6 +194,8 @@ hd.forEach((value, key) => {
   console.log(`${key}=>${value}`);
 });
 ```
+
+**Map 类型转换操作\_104**
 
 ### 数组转换
 
@@ -211,8 +226,10 @@ let newArr = [...hd].filter(function (item) {
 });
 
 hd = new Map(newArr);
-console.log(...hd.keys());
+console.log(...hd.keys()); //houdunren
 ```
+
+**Map 类型管理 DOM 节点\_105**
 
 ### 节点集合
 
@@ -242,6 +259,8 @@ map 的 key 可以为任意类型，下面使用 DOM 节点做为键来记录数
 ```
 
 ### 实例操作
+
+**使用Map类型控制网站表单提交_106**
 
 当不接受协议时无法提交表单，并根据自定义信息提示用户。
 
@@ -279,6 +298,8 @@ map 的 key 可以为任意类型，下面使用 DOM 节点做为键来记录数
 
 ## WeakMap
 
+**WeakMap的语法使用_107**
+
 **WeakMap** 对象是一组键/值对的集
 
 - 键名必须是对象
@@ -313,7 +334,9 @@ new WeakSet('hdcms'); //TypeError: Invalid value used in weak set
 
 ### 基本操作
 
-下面是 WeakSet 的常用指令
+下面是 WeakSet 的常用指令 `set()`, `has()`, `delete()`
+
+不可以使用 size, keys(), for/of
 
 ```js
 const hd = new WeakMap();
@@ -328,6 +351,8 @@ hd.delete(arr);
 //检索判断
 console.log(hd.has(arr)); //false
 ```
+
+**WeakMap弱引用类型体验_108**
 
 ### 垃圾回收
 
@@ -347,6 +372,10 @@ setTimeout(() => {
   console.log(map);
 }, 1000);
 ```
+
+**使用WeakSet开发选课组件_109**
+
+**WeakMap选课案例的视图渲染_110**
 
 ### 选课案例
 

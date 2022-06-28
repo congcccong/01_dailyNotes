@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div name="后盾人">houdunren.com</div>
+    <div name="开源内容管理系统">hdcms.com</div>
+  </body>
+  <script>
+    'use strict';
+    let divs = document.querySelectorAll('div');
+    let map = new Map();
+    divs.forEach((ele) => {
+      map.set(ele, { content: ele.getAttribute('name') });
+    });
+    map.forEach((value, key) => {
+      key.addEventListener('click', (e) => {
+        alert(value.content);
+      });
+    });
+    console.log(map);
+  </script>
+</html>
