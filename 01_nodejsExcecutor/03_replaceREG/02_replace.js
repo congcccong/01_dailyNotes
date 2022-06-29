@@ -4,7 +4,7 @@
  */
 const fs = require('fs');
 const OUTPUTFILE = '___output.md';
-const INPUTFILE = '___input.txt';
+const INPUTFILE = '___input.md';
 const REGFILE = '00_reg.json';
 
 // 读入正则文件与草稿文件

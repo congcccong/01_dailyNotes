@@ -1,7 +1,7 @@
 node 02_replace.js
 
-@REM timeout /nobreak /t 3
+set /p filename=please input filename:
 
-@REM node 03_getListFromJsonFile.js
+copy ___output.md  ___output\%filename%
 
-pause 
+@REM pause 

@@ -1,491 +1,641 @@
-# Map
+##  基础知识
 
-## Map
+Canvas 是用使用 JS 画布的思想来绘制图形，下面通过一些示例掌握 Canvas 的使用
 
-Map 是一组键值对的结构，用于解决以往不能用对象做为键的问题
+> 向军大叔每晚八点在 [抖音 (opens new window)](https://live.douyin.com/houdunren)和 [bilibli (opens new window)](https://space.bilibili.com/282190994)直播
 
-- 具有极快的查找速度
-- 函数、对象、基本类型都可以作为键或值
+![xj-small](https://doc.houdunren.com/assets/img/xj.161cc3f2.jpg)
 
-### 声明定义
+###  项目模板
 
-可以接受一个数组作为参数，该数组的成员是一个表示键值对的数组。
+以下示例因为使用到了 Typescript，所以我们使用 vite 创建 typescript 项目，并选择使用 `vanilla` 模板来开发
 
 ```js
-let m = new Map([
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-]);
-
-console.log(m.get('houdunren')); //后盾人
+$ yarn create vite
 ```
 
-使用`set` 方法添加元素，支持链式操作
+项目安装执行结果
 
 ```js
-let map = new Map();
-let obj = {
-  name: '后盾人',
-};
-
-map.set(obj, 'houdunren.com').set('name', 'hdcms');
-
-console.log(map.entries()); //MapIterator {{…} => "houdunren.com", "name" => "hdcms"}
+执行结果
+✔ Project name: … aaa
+✔ Select a framework: › vanilla
+✔ Select a variant: › vanilla-ts
 ```
 
-使用构造函数`new Map`创建的原理如下
+目录结构
 
 ```js
-const hd = new Map();
-const arr = [
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-];
-
-arr.forEach(([key, value]) => {
-  hd.set(key, value);
-});
-console.log(hd);
+├── images				 		//图片文件
+│   └── p2.jpeg
+├── index.html				//项目模板文件
+├── package.json			//项目配置文件
+├── src
+│   ├── main.ts				//项目主文件，我们在这里编码
+│   ├── style.css			//公共样式
+│   └── vite-env.d.ts	//TS类型声明文件
+├── tsconfig.json			//TS配置文件
+└── yarn.lock					//扩展包版本锁定文件
 ```
 
-对于键是对象的`Map`， 键保存的是内存地址，值相同但内存地址不同的视为两个键。
+##  矩形绘制
 
-```js
-let arr = ['后盾人'];
-const hd = new Map();
-hd.set(arr, 'houdunren.com');
-console.log(hd.get(arr)); //houdunren.com
-console.log(hd.get(['后盾人'])); //undefined
+下面来学习使用 strokeRect 方法绘制边框矩形
+
+###  实心矩形
+
+使用 fillRect 方法可以绘制实心矩形，下面是 fillRect 方法的参数说明
+
+| 参数   | 说明                 |
+| :----- | :------------------- |
+| x      | 矩形左上角的 x 坐标  |
+| y      | 矩形左上角的 y 坐标  |
+| width  | 矩形的宽度，以像素计 |
+| height | 矩形的高度，以像素计 |
+
+下面使用纯色填充画布
+
+![image-20210816175329529](https://doc.houdunren.com/assets/img/image-20210816175329529.b7fa8cf9.png)
+
+```html
+<!-- 画布元素 -->
+<canvas id="canvas" width="500" height="500">
+	您的浏览器不支持 HTML5 canvas
+</canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const app = el.getContext('2d')
+    //定义填充颜色
+    app.fillStyle = '#16a085'
+    //绘制矩形
+    app.fillRect(0, 0, 500, 500)
+</script>
 ```
 
-### 获取数量
+###  空心矩形
 
-获取数据数量
+使用 strokeRect 方法可以绘制空心矩形，下面是 strokeRect 方法的参数说明
 
-```js
-console.log(map.size);
+| 参数   | 说明                 |
+| ------ | -------------------- |
+| *x*    | 矩形左上角的 x 坐标  |
+| *y*    | 矩形左上角的 y 坐标  |
+| width  | 矩形的宽度，以像素计 |
+| height | 矩形的高度，以像素计 |
+
+下面绘制实线边框的示例代码
+
+![image-20210817033803269](https://doc.houdunren.com/assets/img/image-20210817033803269.7240fc50.png)
+
+```html
+<canvas id="canvas" width="500" height="500"> 您的浏览器不支持 HTML5 canvas </canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const ctx = el.getContext('2d')
+    //定义填充颜色
+    ctx.strokeStyle = '#16a085'
+    //线条宽度
+    ctx.lineWidth = 30
+    //边角类型：bevel斜角 ,round圆角，miter尖角
+    ctx.lineJoin = 'round'
+    //绘制矩形边框
+    ctx.strokeRect(50, 50, 300, 300)
+</script>
 ```
 
-### 元素检测
+##  圆形绘制
 
-检测元素是否存在
+使用 canvas 可以绘制圆形
 
-```js
-console.log(map.has(obj1));
+###  arc
+
+下面是绘制圆方法 arc 的参数说明
+
+| 参数               | 说明                                                         |
+| ------------------ | ------------------------------------------------------------ |
+| x                  | 圆的中心的 x 坐标。                                          |
+| *y*                | 圆的中心的 y 坐标。                                          |
+| *r*                | 圆的半径。                                                   |
+| *sAngle*           | 起始角，以弧度计。（弧的圆形的三点钟位置是 0 度）。          |
+| *eAngle*           | 结束角，以弧度计。                                           |
+| *counterclockwise* | 可选。规定应该逆时针还是顺时针绘图。False = 顺时针，true = 逆时针。 |
+
+###  绘制空心圆
+
+![image-20210820165631351](https://doc.houdunren.com/assets/img/image-20210820165631351.ccc17509.png)
+
+```html
+<div class="app">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+
+<script>
+    const el = document.querySelector('canvas')
+    const ctx = el.getContext('2d')
+    //填充画布颜色
+    ctx.beginPath()
+    ctx.strokeStyle = 'red'
+    ctx.lineWidth = 20
+    ctx.arc(100, 100, 60, 0, 2 * Math.PI)
+    ctx.stroke()
+</script>
+<div class="app"></div>
 ```
 
-### 读取元素
+###  绘制实心圆
 
-```js
-let map = new Map();
+下面来掌握使用 canvas 绘制填充圆，绘制圆使用 arc 函数，具体参数说明参考上例。
 
-let obj = {
-  name: '后盾人',
-};
+![image-20210820165947519](https://doc.houdunren.com/assets/img/image-20210820165947519.0b10586f.png)
 
-map.set(obj, 'houdunren.com');
-console.log(map.get(obj));
+```html
+<div class="app">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+
+<script>
+    const el = document.querySelector('canvas')
+    const ctx = el.getContext('2d')
+    //填充画布颜色
+    ctx.beginPath()
+    ctx.fillStyle = '#f1c40f'
+    ctx.lineWidth = 20
+    ctx.arc(100, 100, 60, 0, 2 * Math.PI)
+    ctx.fill()
+</script>
+<div class="app"></div>
 ```
 
-### 删除元素
+##  节点绘制
 
-使用 `delete()` 方法删除单个元素
+我们可以通过以下方法定义不同节点、线条样式来绘制图形
 
-```js
-let map = new Map();
-let obj = {
-  name: '后盾人',
-};
+- beginPath() 重置绘制路径
+- lineTo() 开始绘制线条
+- moveTo() 把路径移动到画布中的指定点，但不会创建线条(lineTo 方法会绘制线条)
+- closePath() 闭合线条绘制，即当前点连接到线条开始绘制点
+- lineWidth 线条宽度
+- strokeStyle 线条的样式，可以是颜色 、渐变
+- stroke() 根据上面方法定义的节点绘制出线条
 
-map.set(obj, 'houdunren.com');
-console.log(map.get(obj));
+###  绘制多边形
 
-map.delete(obj);
-console.log(map.get(obj));
+下面是根据节点来绘制三角形图形
+
+![image-20210817033440109](https://doc.houdunren.com/assets/img/image-20210817033440109.6fa7dba4.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            app {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app">
+            <canvas id="canvas" width="400" height="400"></canvas>
+        </div>
+
+        <script>
+            const el = document.querySelector('canvas')
+            const ctx = el.getContext('2d')
+            //填充画布颜色
+            ctx.fillStyle = '#8e44ad'
+            ctx.fillRect(0, 0, el.width, el.height)
+            //开始画线
+            ctx.beginPath()
+            //移动起始点
+            ctx.moveTo(200, 0)
+            //下一个节点
+            ctx.lineTo(400, 200)
+            //下一个节点
+            ctx.lineTo(0, 200)
+            //闭合节点
+            ctx.closePath()
+            //线宽
+            ctx.lineWidth = 10
+            //线颜色
+            ctx.strokeStyle = '#f1c40f'
+            //画线
+            ctx.stroke()
+        </script>
+        <div class="app"></div>
+
+        <script type="module">
+            import main from './main.js'
+        </script>
+    </body>
+</html>
 ```
 
-使用`clear`方法清除 Map 所有元素
+##  线性渐变
 
-```js
-let map = new Map();
-let obj1 = {
-  name: 'hdcms.com',
-};
+使用 canvas 的 createLinearGradient() 方法可以创建线性的渐变对象，用于实现线性渐变效果。
 
-let obj2 = {
-  name: 'houdunren.com',
-};
+###  createLinearGradient
 
-map.set(obj1, {
-  title: '内容管理系统',
-});
+下面是 createLinearGradient 线性渐变的参数
 
-map.set(obj2, {
-  title: '后盾人',
-});
+| 参数 | 描述                |
+| :--- | :------------------ |
+| x0   | 渐变开始点的 x 坐标 |
+| y0   | 渐变开始点的 y 坐标 |
+| x1   | 渐变结束点的 x 坐标 |
+| y1   | 渐变结束点的 y 坐标 |
 
-console.log(map.size);
-console.log(map.clear());
-console.log(map.size);
+###  渐变边框
+
+下面是绘制激变的边框的效果
+
+![image-20210816175218929](https://doc.houdunren.com/assets/img/image-20210816175218929.b1826e65.png)
+
+```html
+<!-- 画布元素 -->
+<canvas id="canvas" width="500" height="500"></canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const ctx = el.getContext('2d')
+    //定义渐变的开始与结束坐标
+    const gradient = ctx.createLinearGradient(0, 0, 500, 500)
+    // 定义渐变位置与颜色，参数一为位置是从 0～1 之间，参数二为激变颜色
+    gradient.addColorStop(0, '#1abc9c')
+    gradient.addColorStop(0.5, '#9b59b6')
+    gradient.addColorStop(1, '#f1c40f')
+    //渐变填充
+    ctx.strokeStyle = gradient
+    //设置线的宽度
+    ctx.lineWidth = 20
+    //绘制线条矩形
+    ctx.strokeRect(100, 100, 300, 300)
+</script>
 ```
 
-### 遍历数据
+###  渐变填充
 
-使用 `keys()/values()/entries()` 都可以返回可遍历的迭代对象。
+渐变也可以用于填充
 
-```js
-let hd = new Map([
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-]);
-console.log(hd.keys()); //MapIterator {"houdunren", "hdcms"}
-console.log(hd.values()); //MapIterator {"后盾人", "开源系统"}
-console.log(hd.entries()); //MapIterator {"houdunren" => "后盾人", "hdcms" => "开源系统"}
+![image-20210816185552244](https://doc.houdunren.com/assets/img/image-20210816185552244.e6eac755.png)
+
+```html
+<!-- 画布元素 -->
+<canvas id="canvas" width="500" height="500"> 您的浏览器不支持 HTML5 canvas </canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const ctx = el.getContext('2d')
+
+    const gradient = ctx.createLinearGradient(0, 0, 500, 500)
+    // 定义渐变位置与颜色，参数一为位置是从 0～1 之间，参数二为激变颜色
+    gradient.addColorStop(0, '#1abc9c')
+    gradient.addColorStop(0.5, '#9b59b6')
+    gradient.addColorStop(1, '#f1c40f')
+    //定义填充颜色
+    ctx.fillStyle = gradient
+    //绘制矩形
+    ctx.fillRect(0, 0, 500, 500)
+</script>
 ```
 
-可以使用`keys/values` 函数遍历键与值
+##  清空区域
+
+下面是将红色画布上清除一块区域，清除后的内容是透明的。
+
+![image-20210819015538839](https://doc.houdunren.com/assets/img/image-20210819015538839.d17ab022.png)
+
+```html
+<canvas id="app" width="500" height="500"></canvas>
+<script>
+    const canvas = document.getElementById('app').getContext('2d')
+
+    canvas.fillStyle = 'red'
+    canvas.fillRect(0, 0, 500, 500)
+		//清除矩形区域
+    canvas.clearRect(50, 50, 100, 100)
+</script>
+```
+
+##  填充文字
+
+下面掌握使用 canvas 的 fillText 方法绘制填充文字
+
+###  fillText
+
+下面是 fillText 方法的参数
+
+| 参数       | 描述                                      |
+| :--------- | :---------------------------------------- |
+| *text*     | 规定在画布上输出的文本。                  |
+| *x*        | 开始绘制文本的 x 坐标位置（相对于画布）。 |
+| *y*        | 开始绘制文本的 y 坐标位置（相对于画布）。 |
+| *maxWidth* | 可选。允许的最大文本宽度，以像素计。      |
+
+###  textBaseline
+
+textBaseline 用于定义文字基线
+
+| 参数        | 说明                             |
+| :---------- | :------------------------------- |
+| alphabetic  | 默认。文本基线是普通的字母基线。 |
+| top         | 文本基线是 em 方框的顶端。。     |
+| hanging     | 文本基线是悬挂基线。             |
+| middle      | 文本基线是 em 方框的正中。       |
+| ideographic | 文本基线是表意基线。             |
+| bottom      | 文本基线是 em 方框的底端。       |
+
+###  textAlign
+
+textAlign 用于文本的对齐方式的属性
+
+| 参数   | 说明                                                         |
+| :----- | :----------------------------------------------------------- |
+| left   | 文本左对齐                                                   |
+| right  | 文本右对齐                                                   |
+| center | 文本居中对齐                                                 |
+| start  | 文本对齐界线开始的地方 （左对齐指本地从左向右，右对齐指本地从右向左） |
+| end    | 文本对齐界线结束的地方 （左对齐指本地从左向右，右对齐指本地从右向左） |
+
+###  示例代码
+
+![image-20210821030506745](https://doc.houdunren.com/assets/img/image-20210821030506745.c6ddab7d.png)
+
+```html
+<canvas id="canvas" width="500" height="500"></canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const ctx = el.getContext('2d')
+    //填充样式
+    ctx.fillStyle = 'red'
+    //文字大小与字体设置
+    ctx.font = '30px CascadiaMono'
+    //定义文字基线
+    ctx.textBaseline = 'top'
+    //文字居中
+    ctx.textAlign = 'center'
+    ctx.fillText('houdunren.com@向军老师', 10, 250)
+</script>
+```
+
+###  激变文字
+
+![image-20210816185904257](https://doc.houdunren.com/assets/img/image-20210816185904257.6c21c2cf.png)
+
+```html
+<canvas id="canvas" width="500" height="500"></canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const ctx = el.getContext('2d')
+    //定义渐变的开始与结束坐标
+    const gradient = ctx.createLinearGradient(0  , 0, 500, 500)
+    // 定义渐变位置与颜色，参数一为位置是从 0～1 之间，参数二为激变颜色
+    gradient.addColorStop(0, '#1abc9c')
+    gradient.addColorStop(0.5, '#9b59b6')
+    gradient.addColorStop(1, '#f1c40f')
+    //渐变填充
+    ctx.strokeStyle = gradient
+    //文字大小与字体设置
+    ctx.font = '30px CascadiaMono'
+    ctx.strokeText('houdunren.com@向军老师', 10, 250)
+</script>
+```
+
+##  图片填充
+
+下面掌握将图片填充到画布
+
+###  参数说明
+
+| 参数      | 描述                               |
+| :-------- | :--------------------------------- |
+| image     | 规定要使用的图片、画布或视频元素。 |
+| repeat    | 默认。该模式在水平和垂直方向重复。 |
+| repeat-x  | 该模式只在水平方向重复。           |
+| repeat-y  | 该模式只在垂直方向重复。           |
+| no-repeat | 该模式只显示一次（不重复）。       |
+
+###  示例代码
+
+![image-20210816213728363](https://doc.houdunren.com/assets/img/image-20210816213728363.3ef9d578.png)
+
+```html
+<!-- 画布元素 -->
+<canvas id="canvas" width="600" height="600"></canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const ctx = el.getContext('2d')
+    //创建图片对象
+    const img = new Image()
+    img.src = 'icon.jpeg'
+    //图片加载后处理
+    img.onload = () => {
+        //第二个参数："repeat|repeat-x|repeat-y|no-repeat"
+        const pat = ctx.createPattern(img, 'repeat')
+        //指定填充方式为贴图
+        ctx.fillStyle = pat
+        //开始填充
+        ctx.fillRect(0, 0, 600, 600)
+    }
+</script>
+```
+
+##  图片缩放
+
+下面将图片直接绘制到画布上。
+
+![image-20210816214705537](https://doc.houdunren.com/assets/img/image-20210816214705537.9a641256.png)
+
+```html
+<!-- 画布元素 -->
+<canvas id="canvas" width="600" height="300"></canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const app = el.getContext('2d')
+    //创建图片对象
+    const img = new Image()
+    img.src = 'icon.jpeg'
+    //图片加载后处理
+    img.onload = () => {
+      el.width = img.naturalWidth * scale(img, el)
+      el.height = img.naturalHeight * scale(img, el)
+      //绘制图片
+      app.drawImage(img, 0, 0, el.width, el.height)
+    }
+
+    //取最小缩放比例
+    function scale(img: HTMLImageElement, el: HTMLCanvasElement): number {
+      return Math.min(el.width / img.naturalWidth, el.height / img.naturalHeight)
+    }
+</script>
+```
+
+##  绘制像素
+
+下面是绘制像素点的示例
+
+![image-20210816215724423](https://doc.houdunren.com/assets/img/image-20210816215724423.3fc16b8f.png)
+
+```html
+<!-- 画布元素 -->
+<canvas id="canvas" width="600" height="300"></canvas>
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象
+    const ctx = el.getContext('2d')
+    //画布填充为红色
+    ctx.fillStyle = 'red'
+    ctx.fillRect(0, 0, el.width, el.height)
+    //向画出中绘制点
+    for (let i = 0; i < 1000; i++) {
+        //随机生成坐标
+        const x = Math.floor(Math.random() * el.width)
+        const y = Math.floor(Math.random() * el.width)
+        //绘制 5x5 白块
+        ctx.rect(x, y, 5, 5)
+        ctx.fillStyle = '#fff'
+        ctx.fill()
+    }
+</script>
+```
+
+###  绘制不规则
+
+![image-20220123141057183](https://doc.houdunren.com/assets/img/image-20220123141057183.cae0153f.png)
+
+```html
+<!-- 画布元素 -->
+<canvas id="canvas" width="500" height="500" style="overflow: hidden; border: solid 20px #000"></canvas>
+
+<script>
+    const el = document.getElementById('canvas')
+    //画布对象并填充为黑色
+    const app = el.getContext('2d')!
+    app.fillStyle = '#000'
+    app.fillRect(0, 0, el.width, el.height)
+
+    //向画出中绘制点
+    for (let index = 0; index < 20; index++) {
+      app.beginPath()
+      //随机设置绘制位置
+      //随机设置圆的半径
+      app.arc(Math.random() * el.width, Math.random() * el.height, 5 + Math.floor(Math.random() * 100), 0, 2 * Math.PI)
+
+      //随机设置填充颜色
+      app.fillStyle = ['yellow', 'red', '#16a085', '#2ecc71', '#f1c40f', '#9b59b6'].sort(() => {
+        return Math.floor(Math.random() * 3) ? 1 : -1
+      })[0]
+      app.fill()
+    }
+</script>
+```
+
+##  黑板实例
+
+下面我们为开发个小黑板功能，可以在上面写字并可以生成截图。
+
+![image-20210817031900983](https://doc.houdunren.com/assets/img/image-20210817031900983.42a6208f.png)
+
+以下是使用 typescript 编写，如果你没有 ts 环境，请删除代码中的类型声明。
 
 ```js
-let hd = new Map([
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-]);
-for (const key of hd.keys()) {
-  console.log(key);
+class Draw {
+  constructor(
+    public width: number,
+    public height: number,
+    public el = document.querySelector<HTMLCanvasElement>('#canvas')!,
+    public app = el.getContext('2d')!,
+    public btns = el.insertAdjacentElement('afterend', document.createElement('div'))!
+  ) {
+    this.el.width = this.width
+    this.el.height = this.height
+    this.setBackground()
+    this.event()
+  }
+
+  //事件绑定
+  private event() {
+    //bind会返回新函数，addEventListener与removeEventListener要使用相同函数
+    const callback = this.drawEventCallback.bind(this)
+
+    this.el.addEventListener('mousedown', () => {
+      //重新画线
+      this.app.beginPath()
+      //鼠标移动事件
+      this.el.addEventListener('mousemove', callback)
+    })
+
+    //鼠标抬起时移除事件
+    this.el.addEventListener('mouseup', () => this.el.removeEventListener('mousemove', callback))
+    return this
+  }
+
+  //黑板写字的事件回调函数
+  private drawEventCallback(event: MouseEvent) {
+    this.app.lineTo(event.offsetX, event.offsetY)
+    this.app.strokeStyle = 'white'
+    this.app.stroke()
+  }
+
+  //截图
+  public short() {
+    const bt = document.createElement('button')
+    bt.innerText = '截图'
+    this.btns.insertAdjacentElement('beforeend', bt)
+    const img = new Image()
+    this.el.insertAdjacentElement('afterend', img)
+
+    bt.addEventListener('click', () => {
+      //使用canval标签的toDataURL方法，获取图片数据内容
+      img.src = this.el.toDataURL('image/jpeg')
+      img.style.cssText = 'width:300px;position:absolute;bottom:50px;right:0;border:solid 10px white;left:50%;transform:translateX(-50%);'
+    })
+    return this
+  }
+
+  //清屏
+  public clear() {
+    const bt = document.createElement('button')
+    bt.innerText = '清屏'
+    this.btns.insertAdjacentElement('beforeend', bt)
+    bt.addEventListener('click', () => {
+      this.app.fillStyle = '#000'
+      this.app.fillRect(0, 0, this.el.width, this.el.height)
+    })
+  }
+
+  //初始背景为黑色
+  private setBackground() {
+    this.app.fillStyle = '#000'
+    this.app.fillRect(0, 0, this.el.width, this.el.height)
+  }
 }
-for (const value of hd.values()) {
-  console.log(value);
-}
-```
 
-使用`for/of`遍历操作，直播遍历 Map 等同于使用`entries()` 函数
-
-```js
-let hd = new Map([
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-]);
-for (const [key, value] of hd) {
-  console.log(`${key}=>${value}`);
-}
-```
-
-使用`forEach`遍历操作
-
-```js
-let hd = new Map([
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-]);
-hd.forEach((value, key) => {
-  console.log(`${key}=>${value}`);
-});
-```
-
-### 数组转换
-
-可以使用`展开语法` 或 `Array.form` 静态方法将 Set 类型转为数组，这样就可以使用数组处理函数了
-
-```js
-let hd = new Map([
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-]);
-
-console.log(...hd); //(2) ["houdunren", "后盾人"] (2) ["hdcms", "开源系统"]
-console.log(...hd.entries()); //(2) ["houdunren", "后盾人"] (2) ["hdcms", "开源系统"]
-console.log(...hd.values()); //后盾人 开源系统
-console.log(...hd.keys()); //houdunren hdcms
-```
-
-检索包含`后盾人`的值组成新 Map
-
-```js
-let hd = new Map([
-  ['houdunren', '后盾人'],
-  ['hdcms', '开源系统'],
-]);
-
-let newArr = [...hd].filter(function (item) {
-  return item[1].includes('后盾人');
-});
-
-hd = new Map(newArr);
-console.log(...hd.keys());
-```
-
-### 节点集合
-
-map 的 key 可以为任意类型，下面使用 DOM 节点做为键来记录数据。
-
-```html
-<body>
-  <div desc="后盾人">houdunren</div>
-  <div desc="开源系统">hdcms</div>
-</body>
-
-<script>
-  const divMap = new Map();
-  const divs = document.querySelectorAll('div');
-
-  divs.forEach((div) => {
-    divMap.set(div, {
-      content: div.getAttribute('desc'),
-    });
-  });
-  divMap.forEach((config, elem) => {
-    elem.addEventListener('click', function () {
-      alert(divMap.get(this).content);
-    });
-  });
-</script>
-```
-
-### 实例操作
-
-当不接受协议时无法提交表单，并根据自定义信息提示用户。
-
-```html
-<form action="" onsubmit="return post()">
-    接受协议:
-    <input type="checkbox" name="agreement" message="请接受接受协议" />
-    我是学生:
-    <input type="checkbox" name="student" message="网站只对学生开放" />
-    <input type="submit" />
-  </form>
-</body>
-
-<script>
-  function post() {
-    let map = new Map();
-
-    let inputs = document.querySelectorAll("[message]");
-    //使用set设置数据
-    inputs.forEach(item =>
-      map.set(item, {
-        message: item.getAttribute("message"),
-        status: item.checked
-      })
-    );
-
-    //遍历Map数据
-    return [...map].every(([item, config]) => {
-      config.status || alert(config.message);
-      return config.status;
-    });
-  }
-</script>
-```
-
-## WeakMap
-
-**WeakMap** 对象是一组键/值对的集
-
-- 键名必须是对象
-- WeaMap 对键名是弱引用的，键值是正常引用
-
-- 垃圾回收不考虑 WeaMap 的键名，不会改变引用计数器，键在其他地方不被引用时即删除
-- 因为 WeakMap 是弱引用，由于其他地方操作成员可能会不存在，所以不可以进行`forEach( )`遍历等操作
-- 也是因为弱引用，WeaMap 结构没有 keys( )，values( )，entries( )等方法和 size 属性
-- 当键的外部引用删除时，希望自动删除数据时使用 `WeakMap`
-
-### 声明定义
-
-以下操作由于键不是对象类型将产生错误
-
-```js
-new WeakSet('hdcms'); //TypeError: Invalid value used in weak set
-```
-
-将 DOM 节点保存到`WeakSet`
-
-```html
-<body>
-  <div>houdunren</div>
-  <div>hdcms</div>
-</body>
-<script>
-  const hd = new WeakMap();
-  document.querySelectorAll('div').forEach((item) => hd.set(item, item.innerHTML));
-  console.log(hd); //WeakMap {div => "hdcms", div => "houdunren"}
-</script>
-```
-
-### 基本操作
-
-下面是 WeakSet 的常用指令
-
-```js
-const hd = new WeakMap();
-const arr = ['hdcms'];
-//添加操作
-hd.set(arr, 'houdunren');
-console.log(hd.has(arr)); //true
-
-//删除操作
-hd.delete(arr);
-
-//检索判断
-console.log(hd.has(arr)); //false
-```
-
-### 垃圾回收
-
-WakeMap 的键名对象不会增加引用计数器，如果一个对象不被引用了会自动删除。
-
-- 下例当`hd`删除时内存即清除，因为 WeakMap 是弱引用不会产生引用计数
-- 当垃圾回收时因为对象被删除，这时 WakeMap 也就没有记录了
-
-```js
-let map = new WeakMap();
-let hd = {};
-map.set(hd, 'hdcms');
-hd = null;
-console.log(map);
-
-setTimeout(() => {
-  console.log(map);
-}, 1000);
-```
-
-### 选课案例
-
-![Untitled](https://doc.houdunren.com/assets/img/Untitled-3394771.86c02b15.gif)
-
-```html
-<style>
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    padding: 20px;
-    width: 100vw;
-    display: flex;
-    box-sizing: border-box;
-  }
-  div {
-    border: solid 2px #ddd;
-    padding: 10px;
-    flex: 1;
-  }
-  div:last-of-type {
-    margin-left: -2px;
-  }
-  ul {
-    list-style: none;
-    display: flex;
-    width: 200px;
-    flex-direction: column;
-  }
-  li {
-    height: 30px;
-    border: solid 2px #e67e22;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    color: #333;
-    transition: 1s;
-  }
-  a {
-    border-radius: 3px;
-    width: 20px;
-    height: 20px;
-    text-decoration: none;
-    text-align: center;
-    background: #16a085;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5px;
-  }
-  .remove {
-    border: solid 2px #eee;
-    opacity: 0.8;
-    color: #eee;
-  }
-  .remove a {
-    background: #eee;
-  }
-  p {
-    margin-top: 20px;
-  }
-  p span {
-    display: inline-block;
-    background: #16a085;
-    padding: 5px;
-    color: white;
-    margin-right: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-</style>
-
-<body>
-  <div>
-    <ul>
-      <li><span>php</span> <a href="javascript:;">+</a></li>
-      <li><span>js</span> <a href="javascript:;">+</a></li>
-      <li><span>向军讲编程</span><a href="javascript:;">+</a></li>
-    </ul>
-  </div>
-  <div>
-    <strong id="count">共选了2门课</strong>
-    <p id="lists"></p>
-  </div>
-</body>
-
-<script>
-  class Lesson {
-    constructor() {
-      this.lis = document.querySelectorAll('ul>li');
-      this.countELem = document.getElementById('count');
-      this.listElem = document.getElementById('lists');
-      this.map = new WeakMap();
-    }
-    run() {
-      this.lis.forEach((item) => {
-        item.querySelector('a').addEventListener('click', (event) => {
-          const elem = event.target;
-          const state = elem.getAttribute('select');
-          if (state) {
-            elem.removeAttribute('select');
-            this.map.delete(elem.parentElement);
-            elem.innerHTML = '+';
-            elem.style.backgroundColor = 'green';
-          } else {
-            elem.setAttribute('select', true);
-            this.map.set(elem.parentElement, true);
-            elem.innerHTML = '-';
-            elem.style.backgroundColor = 'red';
-          }
-          this.render();
-        });
-      });
-    }
-    count() {
-      return [...this.lis].reduce((count, item) => {
-        return (count += this.map.has(item) ? 1 : 0);
-      }, 0);
-    }
-    lists() {
-      return [...this.lis]
-        .filter((item) => {
-          return this.map.has(item);
-        })
-        .map((item) => {
-          return `<span>${item.querySelector('span').innerHTML}</span>`;
-        });
-    }
-    render() {
-      this.countELem.innerHTML = `共选了${this.count()}课`;
-      this.listElem.innerHTML = this.lists().join('');
-    }
-  }
-  new Lesson().run();
-</script>
+const blackboard = new Draw(800, 300)
+blackboard.short()
+blackboard.clear()
 ```
