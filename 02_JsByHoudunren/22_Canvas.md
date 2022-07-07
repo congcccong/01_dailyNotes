@@ -10,7 +10,7 @@ Canvas 是用使用 JS 画布的思想来绘制图形，下面通过一些示例
 
 以下示例因为使用到了 Typescript，所以我们使用 vite 创建 typescript 项目，并选择使用 `vanilla` 模板来开发
 
-```js
+```cmd
 $ yarn create vite
 ```
 

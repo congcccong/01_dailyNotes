@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let lessons = [
+      { title: '后盾人媒体查询响应式布局', author: '后盾人向军' },
+      { title: 'FLEX 弹性盒模型', author: '后盾人' },
+      { title: 'GRID 栅格系统后盾人教程', author: '古老师' },
+    ];
+
+    function links(strings, ...vars) {
+      return strings
+        .map((str, key) => {
+          return str + (vars[key] ? vars[key].replace('后盾人', `<a href="https://www.houdunren.com">后盾人</a>`) : '');
+        })
+        .join('');
+    }
+
+    function template() {
+      return `<ul>
+   ${lessons.map((item) => links`<li>${item.author}:${item.title}</li>`).join('')}
+</ul>`;
+    }
+    document.body.innerHTML += template();
+  </script>
+</html>

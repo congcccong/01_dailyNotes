@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+        font-size: 3em;
+        background: #34495e;
+        color: #34495e;
+        transition: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    houdunren.com
+  </body>
+  <script>
+    'use strict';
+
+    function Color(elem) {
+      this.elem = elem;
+      this.colors = ['#74b9ff', '#ffeaa7', '#fab1a0', '#fd79a8'];
+      this.run = function () {
+        setInterval(
+          function () {
+            let pos = Math.floor(Math.random() * this.colors.length);
+            this.elem.style.background = this.colors[pos];
+          }.bind(this),
+          1000,
+        );
+      };
+    }
+    let obj = new Color(document.body);
+    obj.run();
+  </script>
+</html>
