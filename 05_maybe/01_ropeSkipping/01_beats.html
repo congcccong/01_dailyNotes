@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>节奏速度测试</title>
+    <style>
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+      }
+      .display {
+        margin: 40px;
+        font: 20px 'microsoft yahei';
+      }
+      .display .bpm {
+        margin: 40px;
+        background-color: rgb(175, 250, 225);
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .button {
+        display: flex;
+        flex-direction: column;
+        border-radius: 50%;
+      }
+
+      .button .beatsbutton {
+        background-color: rgb(103, 183, 248);
+        width: 200px;
+        height: 200px;
+        border: 5px solid rgb(28, 122, 177);
+        border-radius: 50%;
+        font: 20px 'microsoft yahei';
+        /* display: none; */
+      }
+      .button .beatscounter {
+        background-color: rgb(219, 241, 16);
+        width: 200px;
+        height: 200px;
+        border: 5px solid rgb(19, 235, 134);
+        border-radius: 50%;
+        font: 50px 'microsoft yahei';
+        display: none;
+      }
+      .option {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        /* font: 30px 'microsoft yahei'; */
+        align-items: center;
+      }
+      .option div {
+        width: 150px;
+      }
+      .option button {
+        font: 20px 'microsoft yahei';
+        border: 1px solid rgb(51, 170, 114);
+        background-color: rgb(158, 221, 167);
+        width: 100px;
+        padding: 20px 0;
+        border-radius: 5px;
+      }
+      .option .option-maxcounter {
+        font: 20px 'microsoft yahei';
+        width: 150px;
+        border: 1px solid rgb(51, 170, 114);
+        background-color: rgb(230, 240, 174);
+        height: 68px;
+        border-radius: 5px;
+        padding: 0 0 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .option #maxcount {
+        font: 20px 'microsoft yahei';
+        border: none;
+        border-radius: 5px;
+        width: 60px;
+        background-color: white;
+        height: 60px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="display">
+        <div class="bpm"><span>实时速度：</span> <span id="lastSpeed">100</span> b/m</div>
+        <div class="bpm"><span>平均速度：</span> <span id="averageSpeed">110</span>b/m</div>
+      </div>
+      <div class="button" id="button">
+        <button class="beatsbutton" id="beatsbutton">轻击节拍</button>
+        <button class="beatscounter" id="beatscounter">0</button>
+      </div>
+      <div class="option">
+        <div class="option-clear"><button id="clearbutton">清除</button></div>
+        <div class="option-maxcounter"><span>统计个数</span> <input type="number" id="maxcount" value="8" /></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    'use strict';
+    class beatsTester {
+      constructor() {
+        this.button = document.querySelector('#button');
+        this.beatsButton = document.querySelector('#beatsbutton');
+        this.beatsCounter = document.querySelector('#beatscounter');
+        this.clearButton = document.querySelector('#clearbutton');
+        this.maxCount = document.querySelector('#maxcount');
+        this.lastSpeedEle = document.querySelector('#lastSpeed');
+        this.lastSpeed = parseInt(this.lastSpeedEle.textContent) || 0;
+        this.averageSpeedEle = document.querySelector('#averageSpeed');
+        this.averageSpeed = parseInt(this.averageSpeedEle.textContent) || 0;
+        this.counterMax = parseInt(this.maxCount.value) || 8; //默认最大计数是8
+        this.counter = 0;
+        this.beatsArr = []; // 节拍数组
+        this.clearFlag = false;
+      }
+      run() {
+        // 轻击节拍的按钮绑定
+        this.button.addEventListener('click', (event) => {
+          this.counter++;
+          this.beatsArr.push(new Date().getTime());
+          this.lastSpeedEle.parentElement.style.backgroundColor = 'rgb(175, 250, 225)';
+          this.averageSpeedEle.parentElement.style.backgroundColor = 'rgb(175, 250, 225)';
+          this.beatsDealer();
+          this.counterTwinkle();
+          clearTimeout(this.sleepId);
+          this.sleepId = setTimeout(() => {
+            this.beatsSleep();
+          }, 2000);
+        });
+        // 按空格也触发节拍计数操作
+        document.addEventListener('keyup', (event) => {
+          console.log(event.keyCode);
+          if (event.keyCode == 32) {
+            this.button.dispatchEvent(new Event('click'));
+          }
+        });
+        // 清除数据的按钮绑定
+        this.clearButton.addEventListener('click', (event) => {
+          this.beatsClear();
+        });
+        // 为平均速度设置最大计数个数
+        this.maxCount.addEventListener('change', (event) => {
+          this.counterMax = parseInt(this.maxCount.value) || 8; //默认最大计数是8
+        });
+      }
+      /*
+          节拍处理
+          1.计数项超出最大值排除最前面的拍击再统计平均数。
+          */
+      beatsDealer() {
+        console.log('counter', this.counter);
+        console.log('max', this.counterMax);
+        while (this.counter > this.counterMax) {
+          this.beatsArr.shift();
+          console.log('arrlength', this.beatsArr.length);
+          this.counter--;
+        }
+        this.beatsCount();
+      }
+      /*
+          节拍数计算
+          1.根据与上次点击的间隔计算出最近速度。
+          2.根据连击次数计算平均速度。
+          */
+      beatsCount() {
+        if (this.counter > 1) {
+          // 实时速度
+          let intervalms = this.beatsArr[this.counter - 1] - this.beatsArr[this.counter - 2];
+          this.lastSpeed = parseInt(60000 / intervalms);
+          this.lastSpeedEle.innerHTML = this.lastSpeed;
+          // 平均速度
+          let totalIntervalms = this.beatsArr[this.counter - 1] - this.beatsArr[0];
+          this.averageSpeed = parseInt((60000 / totalIntervalms) * (this.counter - 1));
+          this.averageSpeedEle.innerHTML = this.averageSpeed;
+        }
+      }
+      /*
+          进入休眠状态,修改样式与数据清空
+          */
+      beatsSleep() {
+        this.counter = 0;
+        this.beatsArr = []; // 节拍数组
+        this.lastSpeedEle.parentElement.style.backgroundColor = 'rgb(246, 248, 151)';
+        this.averageSpeedEle.parentElement.style.backgroundColor = 'rgb(246, 248, 151)';
+      }
+      /*
+          清空数据
+          */
+      beatsClear() {
+        this.counter = 0;
+        this.beatsArr = []; // 节拍数组
+        this.lastSpeedEle.innerHTML = 0;
+        this.averageSpeedEle.innerHTML = 0;
+      }
+      /*
+          按钮与数字的切换显示
+          */
+      displayToggle(hideEle, displayEle) {
+        hideEle.style.display = 'none';
+        displayEle.style.display = 'block';
+      }
+      counterTwinkle() {
+        this.beatsCounter.innerHTML = this.counter;
+        this.displayToggle(this.beatsButton, this.beatsCounter);
+        setTimeout(() => {
+          this.displayToggle(this.beatsCounter, this.beatsButton);
+        }, 150);
+      }
+    }
+
+    new beatsTester().run();
+  </script>
+</html>
